@@ -40,7 +40,7 @@ class Program
     {
         do
         {
-            Console.WriteLine(G());
+            Console.WriteLine($"{G():f3}");
             Console.WriteLine("Для продолжения нажмите любую клавишу.");
             Console.WriteLine("Для выхода из программы нажмите Escape.");
         } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
