@@ -29,7 +29,7 @@ class Program
         double x = Input();
         double y = Input();
         if (y != 0 && x / y > 0)
-            // if (y != 0 & x/y > 0 ) - выведет исключение при y == 0
+            // if (y != 0 & x/y > 0 ) - выведет исключение типа DivideByZero (деление на 0) при y == 0
             // т.к. & (в отличие от &&) всегда проверяет все условия, а && вернет False, если y == 0
             return x + Math.Sin(y);
         if (x != 0 && y / (x * x) <= 1)
@@ -38,9 +38,10 @@ class Program
     }
     static void Main()
     {
+        // повтор решения
         do
         {
-            Console.WriteLine($"{G():f3}");
+            Console.WriteLine($"{G():f3}"); // выводим 3 знака после запятой
             Console.WriteLine("Для продолжения нажмите любую клавишу.");
             Console.WriteLine("Для выхода из программы нажмите Escape.");
         } while (Console.ReadKey(true).Key != ConsoleKey.Escape);

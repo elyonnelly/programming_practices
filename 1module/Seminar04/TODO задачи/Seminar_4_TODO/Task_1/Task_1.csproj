@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF8195EC-196C-40E4-9382-8260370739DB}</ProjectGuid>
+    <ProjectGuid>{5BFF819D-F26B-4D2F-B652-1E169AD65B11}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DM_Mark</RootNamespace>
-    <AssemblyName>DM_Mark</AssemblyName>
+    <RootNamespace>Task_1</RootNamespace>
+    <AssemblyName>Task_1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
