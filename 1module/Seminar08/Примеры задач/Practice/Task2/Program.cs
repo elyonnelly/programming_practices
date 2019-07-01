@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Треугольник_Паскаля
+namespace Task2
 {
     class Program
     {
@@ -13,7 +13,7 @@ namespace Треугольник_Паскаля
         {
             Console.WriteLine("Введите число строк с массиве:");
             int n = Reading();
-            int[][] array = new int[n][];//инициализируем массив массивов
+            int[][] array = new int[n][];
             CreateAndFill(array);
             PrintF(array);
             Console.Read();
@@ -36,14 +36,20 @@ namespace Треугольник_Паскаля
         }
 
         /// <summary>
-        /// метод для треугольника паскаля       
+        /// метод создания и заполнения массива
         /// </summary>
         /// <param name="array"></param>
         private static void CreateAndFill(int[][] array)
         {
-            //C(1,0)=C(1,1)=C(0,0)=1, C(2,0)=C(2,2)=1, C(n,0)=C(n,n)=1
-            //с использованием формулы C(n, k)=C(n-1, k-1) + C(n-1, k).
-            //TODO:
+            int count = 1;
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                array[i] = new int[count++];//подумайте почему это работает правильно
+                for (int j = 0; j < array[i].Length; j++)
+                {
+                    array[i][j] = rnd.Next(-5, 10);
+                }
+            }
         }
 
         /// <summary>
@@ -53,7 +59,7 @@ namespace Треугольник_Паскаля
         private static int Reading()
         {
             int k;
-            while (!int.TryParse(Console.ReadLine(), out k) && k<0)
+            while (!int.TryParse(Console.ReadLine(), out k) && k < 0)
             {
                 Console.WriteLine("Error");
             }
