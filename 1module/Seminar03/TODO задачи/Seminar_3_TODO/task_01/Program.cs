@@ -6,7 +6,7 @@ namespace TODO_task_01
     {
         static void Main(string[] args)
         {
-            int firstInt = 7, secondInt = 3;
+            int firstInt, secondInt;
             // TODO: осуществить ввод переменных firstInt и secondInt, используя метод TryParse().
             Console.WriteLine($"Введенные числа:\n{firstInt}\t{secondInt}");
             // TODO: добавить проверку корректности деления.
