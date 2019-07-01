@@ -1,0 +1,7 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_2_TODO\task_02\bin\Debug\task_02.exe.config
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_2_TODO\task_02\bin\Debug\task_02.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_2_TODO\task_02\bin\Debug\task_02.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_2_TODO\task_02\obj\Debug\task_02.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_2_TODO\task_02\obj\Debug\task_02.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_2_TODO\task_02\obj\Debug\task_02.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_2_TODO\task_02\obj\Debug\task_02.pdb
