@@ -57,7 +57,6 @@ namespace ExampleTask2
             long ans = Math.Min(Math.Min(c / 2, h / 6), o / 1); // Минимум из трёх чисел
             Console.WriteLine($"Мы можем получить {ans} молекул спирта!)");
 
-
             Console.ReadKey();
         }
     }
