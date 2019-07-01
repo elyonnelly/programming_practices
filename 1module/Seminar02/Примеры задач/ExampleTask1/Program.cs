@@ -33,7 +33,7 @@ namespace ExampleTask1
             }
             catch (OverflowException ex) // Число вылезает за пределы границ инта
             {
-                Console.WriteLine(ex.Message); // Когда нет времени писать юзер-френдли ошибку, можно просто выводить ex.Message
+                Console.WriteLine("Введённое число не влезает в границы инта!");
                 return;
             }
             catch (Exception ex) // Если вдруг вылезет какой-то левый эксепшн, то ловим его общим эксепшном
@@ -41,6 +41,20 @@ namespace ExampleTask1
                 Console.WriteLine(ex.Message);
                 return;
             }
+            /*
+             * Заметим, что OverflowException и Exception не должны иметь абсолютно одинаковую реализацию.
+             * Это недопустимо, так как программа по сути одинаково реагирует на разные исключения, то есть
+             * исключения не специфицированы.
+             * catch (OverflowException ex) 
+             * {
+             *     Console.WriteLine(ex.Message);
+             * }
+             * catch (Exception ex)
+             * {
+             *     Console.WriteLine(ex.Message);
+             * }
+             * ТАК НЕЛЬЗЯ!!!
+             */
 
             try
             {
