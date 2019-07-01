@@ -53,20 +53,9 @@ namespace Треугольник_Паскаля
         private static int Reading()
         {
             int k;
-            try
+            while (!int.TryParse(Console.ReadLine(), out k) && k<0)
             {
-                k = int.Parse(Console.ReadLine());
-                if (k <= 0) throw new ArgumentException("колчество строк должно быть больше нуля");
-            }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine(e.Message);
-                k = Reading();
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Eror");
-                k = Reading();
+                Console.WriteLine("Error");
             }
             return k;
         }

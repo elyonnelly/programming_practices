@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task1
+namespace Practice
 {
-    class Program
+    class Task1
     {
         public static Random rnd = new Random();
         static void Main(string[] args)
