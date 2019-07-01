@@ -22,7 +22,7 @@ namespace Task1
             Console.WriteLine("\n====================\n");
 
             int count = 0;
-            foreach (int item in matrix)
+            foreach (int item in matrix) // Заменить, где возможно на var. Добавить осмысленные комментарии к происходящему в программе.
                 if (item < 0) count += 1;
 
 

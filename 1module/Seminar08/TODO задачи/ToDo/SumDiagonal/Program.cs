@@ -41,7 +41,7 @@ namespace SumDiagonal
         /// <returns></returns>
         private static int SumSecondDiag(int[,] matrix)
         {
-            //посчитать сумму на пободной диаганали матрицы
+            //посчитать сумму на побочной диагонали матрицы
         }
 
         /// <summary>
