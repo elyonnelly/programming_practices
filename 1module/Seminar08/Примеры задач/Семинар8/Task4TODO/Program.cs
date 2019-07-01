@@ -11,7 +11,7 @@ namespace Task4TODO
         public static Random rnd = new Random();
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите число строк с массиве:");
+            Console.WriteLine("Введите число строк в массиве:");
             int n = Reading();
             int[][] array = new int[n][];
             CreateAndFill(array);
@@ -20,7 +20,7 @@ namespace Task4TODO
         }
 
         /// <summary>
-        /// метод ввывода элментов массива
+        /// метод вывода элементов массива
         /// </summary>
         /// <param name="array"></param>
         private static void PrintF(int[][] array)
@@ -54,7 +54,7 @@ namespace Task4TODO
             try
             {
                 k = int.Parse(Console.ReadLine());
-                if (k <= 0) throw new ArgumentException("колчество строк должно быть больше нуля");
+                if (k <= 0) throw new ArgumentException("количество строк должно быть больше нуля");
             }
             catch (ArgumentException e)
             {
@@ -63,7 +63,7 @@ namespace Task4TODO
             }
             catch (Exception)
             {
-                Console.WriteLine("Eror");
+                Console.WriteLine("Error");
                 k = Reading();
             }
             return k;
