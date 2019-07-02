@@ -26,7 +26,7 @@ namespace Example_Task_02
         /// <returns></returns>
         static bool TriangleExists(double a, double b, double c)
         {
-            return ((a + b > c) & (b + c > a) & (a + c > b));
+            return ((a + b > c) && (b + c > a) && (a + c > b));
         }
 
         /// <summary>
