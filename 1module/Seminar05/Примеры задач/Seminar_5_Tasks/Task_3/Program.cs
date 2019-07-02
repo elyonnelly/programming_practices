@@ -1,49 +1,56 @@
-﻿using System;
-
-/*
-Дано: 4 переменной типа Random
-Необходимо найти количество прохождений всего цикла глубины 4 
-(границы для каждого уровня от 0 до случайной величины в диапазоне 1…10). 
-Будет ли разница, если создать одну переменную типа Random.
+﻿/*
+Написать метод для вычисления по формуле Ньютона с точностью до
+«машинного нуля» приближенного значения арифметического квадратного
+корня.
+Параметры: подкоренное значение, полученное значение корня и
+значение точности, достигнутой при его вычислении. Если подкоренное
+значение отрицательно - метод должен возвращать в точку вызова
+значение false, иначе - true.
+В основной программе вводить вещественные числа и выводить их корни.
+При отрицательных числах выводить сообщения.
 */
+using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        int count = 0;
-        Random[] rans = new Random[4];
-        for (int i = 0; i < 4; i++)
+        do
         {
-            rans[i] = new Random();
-        }
-        int[] edges = new int[4];
-
-        for (int i = 0; i < 4; i++)
-        {
-            edges[i] = rans[i].Next(0, 10);
-            Console.Write($"{edges[i]} \t");
-        }
-        Console.Write("\n");
-        for (int i = 0; i < edges[0]; i++)
-        {
-            for (int j = 0; j < edges[1]; j++)
+            double x, result = 0, eps = 0;
+            Console.Title = "Формула Ньютона";
+            do
             {
-                for (int k = 0; k < edges[2]; k++)
-                {
-                    for (int m = 0; m < edges[3]; m++)
-                    {
-                        if ("3333" == i.ToString() + j.ToString() + k.ToString() + m.ToString())
-                        {
-                            goto A;
-                        }
-                        count++;
-                    }
-                }
-            }
-        }
-    A: Console.WriteLine($"Количество полных итераций {count}");
-        Console.ReadKey(true);
-    }
-}
+                Console.Clear(); // очистка консольного окна
+                Console.Write("x = ");
+            } while (!double.TryParse(Console.ReadLine(), out x));
 
+            if (!Newton(x, out result, out eps))
+            {
+                Console.WriteLine("Error!"); return;
+            }
+            Console.WriteLine("root({0}) = {1,8:f4}, eps = {2,8:e4}", x, result, eps);
+            Console.WriteLine("Для продолжения нажмите любую клавишу.");
+            Console.WriteLine("Для выхода из программы нажмите Escape.");
+        } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+    }
+    static bool Newton(double x, out double sq, out double eps)
+    {
+        double r1, r2 = x;
+        sq = eps = 0.0;
+        if (x <= 0.0)
+        {
+            Console.WriteLine("Ошибка в данных!");
+            return false;
+        }
+        do
+        {
+            r1 = r2;
+            eps = (x / r1 - r1) / 2;
+            r2 = r1 + eps;
+        } while (r1 != r2); // пока приближения «различимы» для ЭВМ
+        sq = r2;
+        return true;
+    }
+
+}
