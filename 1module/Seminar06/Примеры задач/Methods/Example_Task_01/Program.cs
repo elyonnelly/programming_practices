@@ -55,7 +55,8 @@ namespace Example_Task_01
                 return;
             }
 
-            Console.Write($"Число, записанное в обратном порядке: {ReverseNumber(number)}");
+            Console.Write("Число, записанное в обратном порядке: ");
+            ReverseNumber(number);
             Console.ReadKey();
         }
     }
