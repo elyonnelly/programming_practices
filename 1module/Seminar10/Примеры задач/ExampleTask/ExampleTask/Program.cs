@@ -34,8 +34,8 @@ namespace ExampleTask
     {
         // Пути к файлам, границы допустимых значений и прочие важные
         // константы лучше выносить в константы
-        private const string INPUT_PATH = "../../../results.txt";
-        private const string OUTPUT_PATH = "../../../sorted_results.txt";
+        private const string INPUT_PATH = @"../../../results.txt";
+        private const string OUTPUT_PATH = @"../../../sorted_results.txt";
         private const int MinMark = 0;
         private const int MaxMark = 100;
         private const int PassMark = 35;
