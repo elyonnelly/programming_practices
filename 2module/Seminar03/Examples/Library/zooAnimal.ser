@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfAnimal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Animal xsi:type="Bird">
+    <Id>4</Id>
+    <Name>Cxit</Name>
+    <IsTakenCare>false</IsTakenCare>
+    <Speed>1</Speed>
+  </Animal>
+  <Animal xsi:type="Bird">
+    <Id>5</Id>
+    <Name>Ynvss</Name>
+    <IsTakenCare>true</IsTakenCare>
+    <Speed>77</Speed>
+  </Animal>
+  <Animal xsi:type="Mammal">
+    <Id>8</Id>
+    <Name>Yhfeo</Name>
+    <IsTakenCare>true</IsTakenCare>
+    <Paws>12</Paws>
+  </Animal>
+  <Animal xsi:type="Bird">
+    <Id>2</Id>
+    <Name>Ohrgejr</Name>
+    <IsTakenCare>true</IsTakenCare>
+    <Speed>97</Speed>
+  </Animal>
+  <Animal xsi:type="Mammal">
+    <Id>11</Id>
+    <Name>Avtsgtn</Name>
+    <IsTakenCare>true</IsTakenCare>
+    <Paws>2</Paws>
+  </Animal>
+</ArrayOfAnimal>
