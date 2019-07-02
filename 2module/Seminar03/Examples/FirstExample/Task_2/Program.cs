@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ClassLibrary;
 
 namespace Task_2
 {
+    /*
+     * Разработать библеотеку классов с классом Teacher
+     * Разработать класс RandomL с методами создающий рандомное имя и выдающее степень учителя
+     * 
+     */ 
     class Program
     {
         static void Main(string[] args)
@@ -15,7 +16,7 @@ namespace Task_2
             Teacher[] teacher = new Teacher[rnd.Next(1, 15)];
             for (int i = 0; i < teacher.Length/3; i++)
             {
-                teacher[i] = new Teacher(rnd.Next(20, 30), RandomL.CreateName(rnd));
+                teacher[i] = new Teacher(rnd.Next(20, 30), RandomL.CreateName(rnd));//посомтрите библеотеку
             }
             for (int i = teacher.Length/3; i < teacher.Length; i++)
             {
