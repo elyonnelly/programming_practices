@@ -16,17 +16,18 @@ namespace Task3
             {
                 Console.WriteLine("Введите n");
             } while (!int.TryParse(Console.ReadLine(), out n) || n < 3);
+
             Console.Write(mas[0] + " " + mas[1] + " ");
 
             for (int i = 0; i < n - 2; i++)
             {
-                mas = Fibonachi(mas);
-                Console.Write(mas[mas.Length - 1] + " ");
+                mas = Fibonacci(mas); // дополняем массив очередным числом Фибоначчи
+                Console.Write(mas[mas.Length - 1] + " "); // дописываем последний элемент из массива
             }
             Console.Read();
         }
 
-        static int[] Fibonachi(int[] arr)
+        static int[] Fibonacci(int[] arr)
         {
             int k = arr[arr.Length - 1] + arr[arr.Length - 2];
             Array.Resize(ref arr, arr.Length + 1);
