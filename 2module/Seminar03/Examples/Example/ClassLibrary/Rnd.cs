@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public static class RandomL
+    public class Rnd
     {
         /// <summary>
         /// создание рандомного имени
@@ -43,7 +47,7 @@ namespace ClassLibrary
         public static string GetDegree(Random rnd)
         {
             int rnk = rnd.Next(0, 2);
-            if(rnk==0)
+            if (rnk == 0)
             {
                 return "Middle";
             }

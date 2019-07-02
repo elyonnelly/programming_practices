@@ -38,9 +38,9 @@ namespace ClassLibrary
         /// <param name="rnd"></param>
         public void GetGraduate(Random rnd)//всегда передавайте псевдорандом иначе будет работать очень криво
         {
-            if(rnd.Next(0,2)==1)
+            if (rnd.Next(0, 2) == 1)
             {
-                this.AverageMark*=1.05;
+                this.AverageMark *= 1.05;
                 if (this.AverageMark > 10)
                     AverageMark = 10;
             }

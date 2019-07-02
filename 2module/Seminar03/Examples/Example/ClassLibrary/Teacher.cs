@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace ClassLibrary
 {
     public class Teacher
     {
-        public Teacher(int age, string name):this(age,name,"Junior")
+        public Teacher(int age, string name) : this(age, name, "Junior")
         {
         }
 

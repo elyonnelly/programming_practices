@@ -15,7 +15,7 @@ namespace Task1
                 List<Student> lststd = new List<Student>();
                 for (int i = 0; i < rnd.Next(5, 11); i++)
                 {
-                    lststd.Add(new Student(rnd.Next(0, 8), RandomL.GetSex(rnd), RandomL.CreateName(rnd), rnd.Next(0, 10) + rnd.NextDouble()));
+                    lststd.Add(new Student(rnd.Next(0, 8), Rnd.GetSex(rnd), Rnd.CreateName(rnd), rnd.Next(0, 10) + rnd.NextDouble()));
                     if (Student.CountOfStudents % 2 == 0)
                         lststd[i].GetGraduate(rnd);
                 }
@@ -38,8 +38,8 @@ namespace Task1
             Console.WriteLine($"Count of Students: {Student.CountOfStudents}");
         }
 
-        
 
-       
+
+
     }
 }
