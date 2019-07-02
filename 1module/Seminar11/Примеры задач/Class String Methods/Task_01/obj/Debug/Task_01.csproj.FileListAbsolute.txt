@@ -1,0 +1,7 @@
+C:\Users\Мария\source\repos\Strings\Task_01\bin\Debug\Task_01.exe.config
+C:\Users\Мария\source\repos\Strings\Task_01\bin\Debug\Task_01.exe
+C:\Users\Мария\source\repos\Strings\Task_01\bin\Debug\Task_01.pdb
+C:\Users\Мария\source\repos\Strings\Task_01\obj\Debug\Task_01.csprojAssemblyReference.cache
+C:\Users\Мария\source\repos\Strings\Task_01\obj\Debug\Task_01.csproj.CoreCompileInputs.cache
+C:\Users\Мария\source\repos\Strings\Task_01\obj\Debug\Task_01.exe
+C:\Users\Мария\source\repos\Strings\Task_01\obj\Debug\Task_01.pdb

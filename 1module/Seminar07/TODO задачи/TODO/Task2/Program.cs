@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task1
+namespace Task2
 {
     class Program
     {
@@ -24,13 +24,9 @@ namespace Task1
             }
 
             /*TODO
-            Развернуть массив, не используя Reverse и не создавая новый.  
+            Найти количество элементов, у которых ОБА соседа меньше.
             */
 
-            for (int i = 0; i < length; i++)
-            {
-                Console.Write(array[i]);
-            }
             Console.Read();
         }
     }
