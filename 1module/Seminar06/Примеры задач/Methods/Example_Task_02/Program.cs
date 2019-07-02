@@ -26,7 +26,7 @@ namespace Example_Task_02
         /// <returns></returns>
         static bool TriangleExists(double a, double b, double c)
         {
-            return ((a + b <= c) || (a + b <= c) || (a + b <= c));
+            return ((a + b > c) & (b + c > a) & (a + c > b));
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace Example_Task_02
                 while (!double.TryParse(Console.ReadLine(), out b));
                 do Console.WriteLine("Введите длину стороны c: ");
                 while (!double.TryParse(Console.ReadLine(), out c));
-                if (Perimeter(a, b, c, out p) && Square(a, b, c, ref s))
+                if (Perimeter(a, b, c, out p) & Square(a, b, c, ref s))
                     Console.WriteLine($"s = {s:f3}, p = {p:f3}");
                 else Console.WriteLine("Параметры заданы неверно, треугольник с такими длинами построить нельзя.");
                 Console.WriteLine("Нажмите ESC для выхода, любую клавишу для продолжения.");
