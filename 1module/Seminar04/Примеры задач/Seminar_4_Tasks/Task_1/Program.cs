@@ -30,11 +30,11 @@ class Program
         // Повтор решения
         do
         {
-            int HW1 = rnd.Next(1, 10),
-                HW2 = rnd.Next(1, 10),
-                Test1 = rnd.Next(1, 10),
-                Test2 = rnd.Next(1, 10),
-                Online = rnd.Next(1, 10),
+            int HW1 = rnd.Next(1, 11),
+                HW2 = rnd.Next(1, 11),
+                Test1 = rnd.Next(1, 11),
+                Test2 = rnd.Next(1, 11),
+                Online = rnd.Next(1, 11),
                 Mark;
             double HW, Test;
 
