@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ConsoleApp2
 {
-    class OffsetBook
+    class ExamBook
     {
         int Mark;
-        public OffsetBook(int mark)
+        public ExamBook(int mark)
         {
             Mark = mark;
         }
         public override string ToString()
         {
-            return Mark.ToString(); 
+            return Mark.ToString();
         }
     }
 
@@ -26,7 +23,7 @@ namespace ConsoleApp2
         int year;
         string voice = "YEAH, I'm student!";
 
-        public void University()
+        public void WriteUniversity()
         {
             Console.WriteLine("I'm student.");
         }
@@ -45,7 +42,7 @@ namespace ConsoleApp2
         //TODO Создайте конструктор для HSE_Student из 3х параметров (name, year, IUP_count), 
         //используя базовый. 
 
-        public void HSE()
+        public void WriteHSE()
         //Определить метод, который выводит сообщение типа
         //"YEAH, I'm HSE student! My name is Mark, I'm 12 years old! I have 1 IUP"
         //Использовать интерполяцию
@@ -54,9 +51,9 @@ namespace ConsoleApp2
     }
 
     class MSU_Student //TODO Напишите класс MSU_Student, по аналогии с классом HSE_Student
-    { 
-        OffsetBook offsetBook;
-        public void MSU()
+    {
+        ExamBook offsetBook;
+        public void WriteMSU()
         //Определить метод, который выводит сообщение типа
         //"YEAH, I'm HSE student! My name is Mark, I'm 12 years old! I have 4 in my offset book"
         //Console.WriteLine(examBook) выведет значение examBook.Mark
@@ -70,7 +67,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
 
-            //Создайте в программе массив имен string[] names = {"Mark", ...}
+            //Создайте в программе массив имен string[] names = {"Mark", "Fedya", ...}
             int i;
             do
             {
@@ -80,8 +77,8 @@ namespace ConsoleApp2
                 } while (!int.TryParse(Console.ReadLine(), out i));
                 Student[] students = new Student[i];
                 //TODO Сгенерируйте с вероятностью 60% студента HSE, с вероятностью 30% студента MSU и
-                //с вероятностью 10% студента. Выведите в столбик их клич(методы University, HSE, MSU, причем для каждого
-                //студента свой университетский клич (Студент MSU должен использовать метод MSU())).
+                //с вероятностью 10% студента. Выведите в столбик их клич(методы WriteUniversity, WriteHSE, WriteMSU, причем для каждого
+                //студента свой университетский клич (Студент MSU должен использовать метод WriteMSU())).
                 //Имя студента случайное из заренее заданного списка имен
                 //Годы студентов - целое число из диапазона [17,25]
                 //Количество ИУПов - целое число из диапазона от [0,3]
