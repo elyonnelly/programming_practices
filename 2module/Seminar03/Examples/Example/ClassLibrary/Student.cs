@@ -11,7 +11,7 @@ namespace ClassLibrary
             get => course;
             private set
             {
-                course = value <= 0 || value >= 6 ? 1 : value;//вспомнить что тут есть
+                course = value <= 0 || value >= 6 ? 1 : value;//вспомнить что это такое
             }
         }
 
@@ -41,7 +41,7 @@ namespace ClassLibrary
             if (rnd.Next(0, 2) == 1)
             {
                 this.AverageMark *= 1.05;
-                if (this.AverageMark > 10)
+                if (this.AverageMark > 10)//не забывайте такие проверки на самостах
                     AverageMark = 10;
             }
             else
