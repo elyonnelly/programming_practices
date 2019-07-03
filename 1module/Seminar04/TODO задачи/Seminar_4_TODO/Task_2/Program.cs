@@ -9,6 +9,7 @@ using System;
 class Program
 {
     // декомпозиция - см. примеры задач
+    // ввод числа с клавиатуры
     public static double Input()
     {
         bool p = false;
@@ -21,6 +22,7 @@ class Program
         } while (!p);
         return x;
     }
+    // сама функция (в виде метода) 
     public static bool G(double x, double y)
     {
         return ((x * x + y * y) <= 4) && ((x >= 0 && y <= 0) || (x >= 0 && y >= 0 && y <= x));

@@ -10,6 +10,7 @@ using System;
 
 class Program
 {
+    // метод для считывания чисел 
     public static double Input(string str)
     {
         bool p = false;

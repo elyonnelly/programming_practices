@@ -34,6 +34,7 @@ class Program
             Console.WriteLine("Для выхода из программы нажмите Escape.");
         } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
     }
+
     static bool Newton(double x, out double sq, out double eps)
     {
         double r1, r2 = x;

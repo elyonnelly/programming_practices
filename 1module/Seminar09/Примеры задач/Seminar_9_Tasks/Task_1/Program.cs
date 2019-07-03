@@ -16,7 +16,7 @@ namespace Task_1
         static string CreateString(int k, char minChar, char maxChar)
         {
             if (k <= 0)
-                throw new Exception("Аргумент метода должен быть положительным!");
+                return "";
             // minChar, minChar - границы диапазона символов
             if (maxChar < minChar)
             {
@@ -38,7 +38,7 @@ namespace Task_1
         {
             int intVal;
             do Console.WriteLine(comment);
-            while (!int.TryParse(Console.ReadLine(), out intVal));
+            while (!int.TryParse(Console.ReadLine(), out intVal) || intVal <= 0);
             return intVal;
         }
 
@@ -49,7 +49,7 @@ namespace Task_1
             int index;
             for (int i = 0; i < s2.Length; i++)
                 while ((index = res.IndexOf(s2[i])) >= 0)
-                    res = RemoveAt(res, index);               
+                    res = RemoveAt(res, index);
             return res;
         } // end of MoveOff()
 
@@ -87,18 +87,7 @@ namespace Task_1
             {
                 int N = GetIntValue("Введите N");
                 string str = String.Empty;
-                do
-                {
-                    try
-                    {
-                        str = CreateString(N, '0', '9');
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                        N = GetIntValue("Введите N");
-                    }
-                } while (str == String.Empty);
+                str = CreateString(N, '0', '9');
                 Console.WriteLine("Составленная строка \t" + str);
                 string even = "02468"; // 0 - чётный
                 Console.WriteLine("Редактированная строка \t" + MoveOff(str, even));

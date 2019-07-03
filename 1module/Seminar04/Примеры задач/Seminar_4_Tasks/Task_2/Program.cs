@@ -24,6 +24,7 @@ class Program
         } while (!p);
         return x;
     }
+    // функция-метод
     public static double G()
     {
         double x = Input();

@@ -13,6 +13,7 @@ using System;
 
 class Program
 {
+    // метод для считывания чисел 
     public static double Input(string str)
     {
         double x = 0d;
@@ -26,9 +27,11 @@ class Program
         while (!p);
         return x;
     }
+
+    // функция
     public static double Func(double x)
     {
-        return (x * x);
+        return x * x;
     }
 
     // TODO: напишите метод непосредственно для подсчета площади под графиком
