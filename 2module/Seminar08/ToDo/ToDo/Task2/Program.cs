@@ -33,7 +33,7 @@ namespace Task2
                //ToDo с помощью агреации инициализируйте a
             }
             A a;
-            public override string ToString() => $"B: {a.line}";
+            public override string ToString() => $"B: {a.line}";//подумайте как можно изменить a.line , чтобы итоговое сообщение оставалось неизменным 
         }
     }
 }
