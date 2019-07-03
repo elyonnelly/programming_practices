@@ -22,7 +22,7 @@ namespace Task2
         public A(string line)
         {
             this.line = line;
-            //ToDo с помощью композиции инициализируйте b
+            //ToDo инициализируйте b
         }
         public override string ToString() => $"A: {b}";
 
@@ -30,10 +30,10 @@ namespace Task2
         {
             public B(A a)
             {
-               //ToDo с помощью агреации инициализируйте a
+                this.a = a;
             }
             A a;
-            public override string ToString() => $"B: {a.line}";//подумайте как можно изменить a.line , чтобы итоговое сообщение оставалось неизменным 
+            public override string ToString() => $"B: {a.line}";
         }
     }
 }
