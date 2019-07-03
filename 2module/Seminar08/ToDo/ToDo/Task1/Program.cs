@@ -36,7 +36,7 @@ namespace Task1
     {
         public Person()
         {
-            //TODO создайте композицию
+            //TODO инициализируйте child с помощью композиции
             Name = Child.RandomName();
         }
 
@@ -46,10 +46,10 @@ namespace Task1
             Name = Child.RandomName();
         }
 
-        Child child { get; }// вспомните что значит автосвоство только с get аццессором 3 семинар 2 модуля есть в примерах пояснения
+        Child child { get; }// вспомните, что значит автосвоство только с get акцессором( 3 семинар 2 модуля есть в примерах пояснения)
         readonly string Name;
 
-        public override string ToString() => $"Person: {Name}, his child: {child}";//TODO сделайте так чтобы выводилось имя ребенка
+        public override string ToString() => $"Person: {Name}, his child: {child.ToString()}";//TODO сделайте так чтобы выводилось имя ребенка 
         public class Child
         {
             static Random rnd = new Random();
@@ -68,7 +68,6 @@ namespace Task1
                 }
                 return name;
             }
-
             string Name { get; }
         }
     }
