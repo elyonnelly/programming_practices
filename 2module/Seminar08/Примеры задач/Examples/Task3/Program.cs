@@ -13,11 +13,11 @@ namespace Task3
             Car[] car = new Car[4];
             for (int i = 0; i < car.Length; i++)
             {
-                car[i] = new Car(Car.GenerateName(),Car.rnd.Next(1,120)+Car.rnd.NextDouble(),Car.rnd.Next(1,10));
+                car[i] = new Car(Car.GenerateLine(),Car.rnd.Next(1,120)+Car.rnd.NextDouble(),Car.rnd.Next(1,10));
             }
             foreach (var item in car)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item);// без ToString()
             }
             Console.Read();
         }
@@ -25,10 +25,10 @@ namespace Task3
 
     public class Car
     {
-        Engine engine;
-        string Owner;
-        double Speed;
-        int Age;
+        Engine engine { get; }
+        string Owner { get; }
+        double Speed { get; }
+        int Age { get; }
         public static Random rnd = new Random();
 
         public Car(string owner, double speed, int age)
@@ -36,11 +36,11 @@ namespace Task3
             Owner = owner;
             Speed = speed;
             Age = age;
-            engine = new Engine(rnd.Next(20,200)+rnd.NextDouble(),GenerateName(), rnd.Next(50, 100) + rnd.NextDouble(),this);
+            engine = new Engine(rnd.Next(20,200)+rnd.NextDouble(),GenerateLine(), rnd.Next(50, 100) + rnd.NextDouble(),this);//обратите внимание перекидываем через this
         }
-        public static string GenerateName()
+        public static string GenerateLine()
         {
-            string res = String.Empty;
+            string res = String.Empty;//пустая строка
             int length = rnd.Next(5, 15);
             for (int i = 0; i < length; i++)
             {
@@ -48,13 +48,15 @@ namespace Task3
             }
             return res;
         }
-
+        /// <summary>
+        /// Вложенный класс
+        /// </summary>
         class Engine
         {
-            double Power;
-            string Type;
-            double Weight;
-            Car car;
+            double Power { get; }
+            string Type { get; }
+            double Weight { get; }
+            Car car { get; }
             public Engine(double power, string type, double weight,Car car)
             {
                 this.car = car;
@@ -64,7 +66,7 @@ namespace Task3
             }
             public override string ToString() => $"Car\nOwner: {car.Owner}\tSpeed: {car.Speed:f3}\tAge: {car.Age}\nEngine:\nPower: {Power:f3}\tType: {Type}\tWeight: {Weight:f3}\n";
         }
-        public override string ToString() => $"{engine}";
+        public override string ToString() => $"{engine}";//вызывает ToString 
     }
 
 }
