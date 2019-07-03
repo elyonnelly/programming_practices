@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seminar2_7_Example2", "Seminar2_7_Example2\Seminar2_7_Example2.csproj", "{4CA7E260-EC24-4A81-8469-7E0B60E37D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportLibrary", "TransportLibrary\TransportLibrary.csproj", "{C869CD51-149F-494C-A452-D68E0A0435BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CA7E260-EC24-4A81-8469-7E0B60E37D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA7E260-EC24-4A81-8469-7E0B60E37D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA7E260-EC24-4A81-8469-7E0B60E37D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA7E260-EC24-4A81-8469-7E0B60E37D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C869CD51-149F-494C-A452-D68E0A0435BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C869CD51-149F-494C-A452-D68E0A0435BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C869CD51-149F-494C-A452-D68E0A0435BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C869CD51-149F-494C-A452-D68E0A0435BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E67DB2B-6C06-44C3-9166-915D7F8FB1B9}
+	EndGlobalSection
+EndGlobal

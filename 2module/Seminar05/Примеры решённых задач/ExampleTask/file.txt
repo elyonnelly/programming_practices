@@ -1,0 +1,2 @@
+Использую FileStream для создания текстовых файлов B)
+London is the capital of Great Britain
