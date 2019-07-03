@@ -15,22 +15,9 @@ namespace ClassLibrary
             }
         }
 
-        private string sex;//можно сделать автосвойство
-        public string Sex
-        {
-            get => sex;
-            private set
-            {
-                sex = value;
-            }
-        }
-        private string name;//можно сделать автореализуемым свойством
-        public string Name
-        {
-            get => name;
-            private set => name = value;
-        }
-        private double AverageMark { get; set; }
+        private readonly string Sex;//можно задать значение либо как у константы при инициализации или в контрукторе класса
+        public string Name { get; }//на самом деле тоже REDAONLY
+        public double AverageMark { get; private set; }
 
         /// <summary>
         /// метод получения оценки
