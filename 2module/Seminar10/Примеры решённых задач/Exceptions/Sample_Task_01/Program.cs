@@ -22,6 +22,9 @@ namespace Sample_Task_01
 {
     class Program
     {
+        /// <summary>
+        /// Генератор псевдослучайных чисел
+        /// </summary>
         static Random random = new Random();
         static void Main(string[] args)
         {
