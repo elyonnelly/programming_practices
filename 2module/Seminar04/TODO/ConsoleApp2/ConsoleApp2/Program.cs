@@ -10,7 +10,11 @@ namespace ConsoleApp2
         {
             Mark = mark;
         }
-        public override string ToString()
+        public override string ToString()// Переопределение метода ToString(). Не волнуйтесь,
+                                         // с этим Вы познакомитесь на следующем семинаре
+                                         // Эти строки кода позволяют при создании объекта класса 
+                                         // ExamBook a = new ExamBook(5);
+                                         // Console.WriteLine(a); Вывести на экран 5.
         {
             return Mark.ToString();
         }
