@@ -30,7 +30,6 @@ namespace Sample_Task_01
             {
                 gandlaf.TryToPass();
             } catch (NoPassageException) {}
-
             Console.ReadKey();
         }
     }

@@ -28,9 +28,9 @@ namespace SampleTaskLib
         /// <summary>
         /// Свойства для доступа коэффицентов квадратного трехчлена.
         /// </summary>
-        public double A { get; }
-        public double B { get; }
-        public double C { get; }
+        public double A { get => a; }
+        public double B { get => b; }
+        public double C { get => c; }
 
         /// <summary>
         /// Вычисление суммы корней трехчлена
