@@ -9,16 +9,13 @@ namespace ClassLibrary
 {
     public abstract class Cetartiodactyla
     {
-      
-        public virtual string Voice()
-        {
-            return "Song";
-        }
-        bool IsTail { get; set; }
+
+        public abstract string GetVoice();
+        bool HasTail { get; set; }
 
         protected Cetartiodactyla(bool isTail, double size, ConsoleColor skinColor)
         {
-            IsTail = isTail;
+            HasTail = isTail;
             Size = size;
             SkinColor = skinColor;
         }
@@ -28,14 +25,14 @@ namespace ClassLibrary
         {
             get
             {
-                if (IsTail)
+                if (HasTail)
                     return "has tail";
                 else
                     return "has not tail";
             }
         }
         ConsoleColor SkinColor { get; }
-        public override string ToString() => $"Hoofed\nColor: {SkinColor}\t{Tail}\tSize: {Size:f3}";
+        public override string ToString() => $"Hoofed\t{GetVoice()}\nColor: {SkinColor}\t{Tail}\tSize: {Size:f3}";
     }
     public class Whale : Cetartiodactyla
     {
@@ -45,7 +42,7 @@ namespace ClassLibrary
         }
 
         string Type { get; }
-        public override string Voice()
+        public override string GetVoice()
         {
             Console.Beep(440, 300);
             Console.Beep(415, 300);
@@ -65,7 +62,7 @@ namespace ClassLibrary
         }
 
         double Power { get; set; }
-        public override string Voice()
+        public override string GetVoice()
         {
             Console.Beep(247, 500);
             Console.Beep(417, 500);
