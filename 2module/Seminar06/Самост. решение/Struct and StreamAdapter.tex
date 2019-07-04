@@ -1,0 +1,68 @@
+\documentclass[a4paper,12pt]{article} % добавить leqno в [] для нумерации слева
+
+%%% Работа с русским языком
+\usepackage[margin=0.5in]{geometry}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+%% Шрифты
+\usepackage{euscript}
+\usepackage{mathrsfs} 
+
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Заголовок
+\author{}
+\title{Домашнее задание по программированию}
+\date{}
+\begin{document}
+	\maketitle
+	
+	\begin{enumerate}
+		\item В библиотеке классов LibHSE создайте структуру Subject, в которой определены следующие свойства с get - аксессором:
+		\begin{enumerate}
+			\item string NmeOfSubject - название предмета
+			\item int Mark - целочисленное число от 0 до 10
+			
+		\end{enumerate}
+		Создайте структуру ExamBook со следующими полями и свойсвами
+		\begin{enumerate}
+			\item Конструктор, который принимает параметры Subject[] subjects и string name
+			\item Name  - свойство с get-аксессором
+			\item Subject[] subjects- массив предметов 
+			\item свойство AverageMark - средняя оценка в зачетке
+			\item свойство bool haveNegativeMarks - которое сообщает, есть ли в зачкетке оценки <4
+			\item Метод string ToSave() - возвращает информацию о зачетке вида
+			
+			
+		Egor: Math 7;
+			 Programming 5;
+			 History 10; 
+			 
+			Dima: English 3;
+			 \
+		\end{enumerate}
+		 В первом проекте создать массив ExamBook[] examBooks из 10 элементов класса ExamBook. В каждом объекте объявить массив Subject[] subjects случайной длины из диапазона [1,10) 
+		 Определить каждую оценку случайно (диапазон [1,10]), с названием предмета и именем студента (название предмета и имя генерировать случайным образом случайной длины).
+		 
+		 С помощью адаптеров потока запишите examBooks в файл "ListHSE.txt" (файл находится в каталоге с решением) информацию о всех зачетках (используйте метод ToSave())
+		 
+		 Во второй программе создайте массив из 10 элементов класса ExamBook[] examBooks. С помощью адаптера потока считывайте файл "ListHSE" (обработайте все возможные исключения), и запишите их в массив examBooks. Выведете на экран количество зачеток, у которых нет незачей, и их все средние оценки. Далее выведете количество зачеток, у которых есть хотя бы один незачет, и название незачтенного предмета (выведете первый попавшийся).
+		 
+		 
+	\end{enumerate}
+	
+\end{document}
