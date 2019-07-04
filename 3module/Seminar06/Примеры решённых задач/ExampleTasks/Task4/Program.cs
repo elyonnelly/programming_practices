@@ -1,10 +1,15 @@
-﻿using System;
+﻿/*
+ * 
+ * TODO: сделать задачи на ожидание окончания работы
+ *       других потоков + deadlock
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task1
+namespace Task4
 {
     class Program
     {
