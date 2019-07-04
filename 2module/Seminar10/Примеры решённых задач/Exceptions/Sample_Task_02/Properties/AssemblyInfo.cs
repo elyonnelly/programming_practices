@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Sample_Task_01")]
+[assembly: AssemblyTitle("Sample_Task_02")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sample_Task_01")]
+[assembly: AssemblyProduct("Sample_Task_02")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("a70a1053-2951-4f70-8a28-19f4fb802b5d")]
+[assembly: Guid("d960f6d1-0b97-4395-afce-0be4615530c2")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
