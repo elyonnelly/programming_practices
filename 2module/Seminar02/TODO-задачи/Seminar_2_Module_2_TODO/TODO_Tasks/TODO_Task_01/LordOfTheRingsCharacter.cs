@@ -9,21 +9,43 @@ namespace TODO_Task_01
     {
         // TODO: защитить поля класса от прямой перезаписи данных.
         /// <summary>
-        /// Имя, фамилия, раса, местоположение
+        /// Имя персонажа
         /// </summary>
-        public string firstName, lastName, race, location;
+        public string firstName;
+        /// <summary>
+        /// Фамилия персонажа
+        /// </summary>
+        public string lastName;
+        /// <summary>
+        /// Раса персонажа
+        /// </summary>
+        public string race;
+        /// <summary>
+        /// Местоположение персонажа
+        /// </summary>
+        public string location;
 
         // TODO: добавить переменную, подсчитывающую количество пройденных персонажем шагов с начала его создания.
 
         // TODO: переписать методы GetInformation и PrintNewLocation, используя лямбда-выражение.
 
+        /* NOTE: свойство GetInformation и метод ToString возвращают одинаковую информацию. Очевидно, что реализовывать необходимо только
+         * какой-то один из этих методов/свойств. В данной ситуации двойная реализация приведена лишь для демонстрации того, что можно и так, и так. 
+         * (А вообще обычно переопределяют ToString.)*/
         /// <summary>
-        /// Метод для вывода информации о персонаже.
+        /// Метод для возвращения информации об экземпляре класса
         /// </summary>
-        public void GetInformation()
+        /// <returns></returns>
+        public string GetInformation
         {
-            Console.WriteLine($"First name: {firstName}\nLast name: {lastName}\nRace: {race}\nLocation: {location}");
+            get { return ($"First name: {firstName}\nLast name: {lastName}\nRace: {race}\nLocation: {location}"); }
         }
+
+        /// <summary>
+        /// Переопределение стандартного вывода информации об экземпляре класса
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString() => ($"First name: {firstName}\nLast name: {lastName}\nRace: {race}\nLocation: {location}");
 
         /* TODO: добавьте перегруженные методы: 
          * 1) для изменения местоположения и количества пройденных шагов к методу ChangeLocation(); 
