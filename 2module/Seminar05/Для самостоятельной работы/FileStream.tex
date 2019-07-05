@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{article} % добавить leqno в [] для нумерации слева
+
+%%% Работа с русским языком
+\usepackage[margin=0.5in]{geometry}
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+%% Шрифты
+\usepackage{euscript}
+\usepackage{mathrsfs} 
+
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Заголовок
+\author{}
+\title{Домашнее задание по программированию}
+\date{}
+\begin{document}
+	\maketitle
+	
+	\begin{enumerate}
+		\item Создайте программу, котороая записывает в файл "Fib.txt"\ в каталоге с решением первые n чисел Фибоначчи. Число n считывать в программе. Использовать файловые потоки. Обработать все возможные исключения.
+		 
+		 \item С помощью класса DriveInfo и его статических методов получте название и объем всех дисков на компьютере. Выведите информацию о них в файл "DriveInfo.txt". Используйте файловые потоки и обработайте все исключения.
+		 
+		 \item С класса DirectoryInfo получите список всех файлов в каталоге с решением вашей программы. Создайте файл в каталоге с решением "MyFiles.txt"\ и с помощью файловых потоков запишите в него все файлы, которые в своем названии содержат "pro"\ (регистр букв не учитывается). Обработайе все исключения.
+		 
+	\end{enumerate}
+	
+\end{document}
