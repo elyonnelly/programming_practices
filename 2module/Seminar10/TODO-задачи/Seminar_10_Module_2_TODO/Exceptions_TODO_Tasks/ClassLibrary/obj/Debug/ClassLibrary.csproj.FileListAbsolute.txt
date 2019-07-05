@@ -1,0 +1,6 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_10_Module_2_TODO\Exceptions_TODO_Tasks\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_10_Module_2_TODO\Exceptions_TODO_Tasks\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_10_Module_2_TODO\Exceptions_TODO_Tasks\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_10_Module_2_TODO\Exceptions_TODO_Tasks\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_10_Module_2_TODO\Exceptions_TODO_Tasks\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Seminar_10_Module_2_TODO\Exceptions_TODO_Tasks\ClassLibrary\obj\Debug\ClassLibrary.pdb
