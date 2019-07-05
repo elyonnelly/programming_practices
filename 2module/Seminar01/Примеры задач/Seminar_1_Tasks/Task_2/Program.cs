@@ -1,9 +1,11 @@
 ﻿/*
 Написать статический класс PolynomOperations для работы с полиномами n-ой степени.
-Добавить методы для Сложения, Вычитания, Умножения, Парсинга и представления полиномов в виде строки.
-В основной программе ввести с клавиатуры число N и считать из консоли N
+Добавить методы для Сложения, Вычитания, Умножения, метод, преобразующий строку в полином,
+и представления полиномов в виде строки. В основной программе ввести с клавиатуры число N и считать из консоли N
 полиномов (поместить их в массив). Если N >= 2 вывести сумму, разность и произведение
 первых двух введённых полиномов.
+Пример:
+1 2 3 </парсинг/> 1 * (x ^ 0) + 2 * (x ^ 1) + 3 * (x ^ 2)
 */
 using System;
 
@@ -52,10 +54,10 @@ namespace Task_2
             return res;
         }
         // представление в виде строки
-        internal static string ToString(int[] arr)
+        internal static string Print(int[] arr)
         {
             if (arr == null)
-                return "";
+                return string.Empty;
             string output = string.Empty;
             for (int i = 0; i < arr.Length; i++)
                 if (i != arr.Length - 1)
@@ -116,19 +118,19 @@ namespace Task_2
                         continue;
                     }
                     polynoms[count++] = arr;
-                    Console.WriteLine($"Вы ввели:\t \n{PolynomOperations.ToString(arr)}");
+                    Console.WriteLine($"Вы ввели:\t \n{PolynomOperations.Print(arr)}");
 
                 } while (true);
                 Console.WriteLine("Все введённые полиномы");
                 foreach (int[] arr in polynoms)
-                    Console.WriteLine($"{PolynomOperations.ToString(arr)}");
+                    Console.WriteLine($"{PolynomOperations.Print(arr)}");
                 if (N >= 2)
                 {
-                    Console.WriteLine($"Сумма \t" + PolynomOperations.ToString(
+                    Console.WriteLine($"Сумма \t" + PolynomOperations.Print(
                         PolynomOperations.Sum(polynoms[0], polynoms[1])));
-                    Console.WriteLine($"Разность \t" + PolynomOperations.ToString(
+                    Console.WriteLine($"Разность \t" + PolynomOperations.Print(
                         PolynomOperations.Minus(polynoms[0], polynoms[1])));
-                    Console.WriteLine($"Произведение \t" + PolynomOperations.ToString(
+                    Console.WriteLine($"Произведение \t" + PolynomOperations.Print(
                         PolynomOperations.Multiply(polynoms[0], polynoms[1])));
                 }
                 Console.WriteLine("Для продолжения нажмите любую клавишу.");
