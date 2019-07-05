@@ -74,7 +74,7 @@ namespace ConsoleApp2
             //Создайте в программе массив имен string[] names = {"Mark", "Fedya", ...}
             do
             {
-                int count
+                int count;
                 do
                 {
                     Console.WriteLine("Введите количество студентов");
