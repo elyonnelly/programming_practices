@@ -33,6 +33,11 @@ namespace Task3
             try
             {
                 fs = new FileStream("../../../prime.txt", FileMode.Create);
+                for (int i = 0; i < 100; ++i)
+                {
+                    byte[] info = Encoding.Default.GetBytes(i.ToString() + ' ');
+                    if (IsPrime(i)) fs.Write(info, 0, info.Length);
+                }
             }
             catch (IOException)
             {
@@ -44,13 +49,7 @@ namespace Task3
                 Console.WriteLine(ex.Message);
                 return;
             }
-
-            for (int i = 0; i < 100; ++i)
-            {
-                byte[] info = Encoding.Default.GetBytes(i.ToString() + ' ');
-                if (IsPrime(i)) fs.Write(info, 0, info.Length);
-            }
-            fs.Close();
+            fs?.Close();
         }
     }
 }
