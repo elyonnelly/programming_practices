@@ -15,7 +15,7 @@ namespace Task1
         static void Main()
         {
             // Анонимный метод
-            Cast firstHandler = null; // null нужен только для того чтобы испоьлзовать += . Можно избежать 
+            Cast firstHandler = null; // null инициализирует экземпляр. Позволяет использовать +=. Можно заменить на Cast firstHandler = delegate (double val)...
             firstHandler += delegate (double val)
             { // Помните ли вы, как работает следующая стока?
                 return Math.Ceiling(val) % 2 == 0 ? (int)Math.Ceiling(val) : (int)Math.Floor(val);

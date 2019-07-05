@@ -8,8 +8,8 @@ namespace Task2
 {
     class Program
     {
-        delegate int[] IntToIntArrayDel(int value); // Объявляем делегаты - типы
-        delegate void PrintArrayDel(int[] value);
+        delegate int[] IntToIntArrayDelelegate(int value); // Объявляем делегаты - типы
+        delegate void PrintArrayDelelegate(int[] value);
 
         static int[] IntToIntArrayHandler(int value)
         {
@@ -35,8 +35,8 @@ namespace Task2
 
         static void Main(string[] args)
         {
-            IntToIntArrayDel del1 = new IntToIntArrayDel(IntToIntArrayHandler); // Инстанциируем (создаем объекты) делагатов
-            PrintArrayDel del2 = new PrintArrayDel(PrintArrayHandler);
+            IntToIntArrayDelelegate del1 = new IntToIntArrayDelelegate(IntToIntArrayHandler); // Инстанциируем (создаем объекты) делагатов
+            PrintArrayDelelegate del2 = new PrintArrayDelelegate(PrintArrayHandler);
 
 
 

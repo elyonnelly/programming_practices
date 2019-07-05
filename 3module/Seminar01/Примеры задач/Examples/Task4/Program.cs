@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task4
 {
-    public delegate void ActionDel(int x, int y);
+    public delegate void ActionDelelegate(int x, int y);
 
     static class MyMath
     {
@@ -43,39 +43,39 @@ namespace Task4
 
         static void Main(string[] args)
         {
-            ActionDel actionDel = null;
+            ActionDelelegate actionDelelegate = null;
 
             for (int i = 0; i < 15; i++)
             {
                 switch (rnd.Next(5))
                 { // Заполняем массив, дублируя методы в многоадресный делегат
                     case 0:
-                        actionDel += MyMath.Addition; // Можно добавлять несколько раз один и тот же метод к делегату
+                        actionDelelegate += MyMath.Addition; // Можно добавлять несколько раз один и тот же метод к делегату
                         break;
                     case 1:
-                        actionDel += MyMath.Multiplication;
+                        actionDelelegate += MyMath.Multiplication;
                         break;
                     case 2:
-                        actionDel += MyMath.Exponentiation;
+                        actionDelelegate += MyMath.Exponentiation;
                         break;
                     case 3:
-                        actionDel += MyMath.Division;
+                        actionDelelegate += MyMath.Division;
                         break;
                     case 4:
-                        actionDel += MyMath.Subtraction;
+                        actionDelelegate += MyMath.Subtraction;
                         break;
                 }
             }
 
-            actionDel?.Invoke(rnd.Next(-10, 11), rnd.Next(-10, 11));
+            actionDelelegate?.Invoke(rnd.Next(-10, 11), rnd.Next(-10, 11));
 
             for (int i = 0; i < 15; i++)
             {
-                actionDel -= MyMath.Multiplication;
-                actionDel -= MyMath.Division;
+                actionDelelegate -= MyMath.Multiplication;
+                actionDelelegate -= MyMath.Division;
             }
             Console.WriteLine("\n===================\n");
-            actionDel?.Invoke(rnd.Next(-10, 11), rnd.Next(-10, 11));
+            actionDelelegate?.Invoke(rnd.Next(-10, 11), rnd.Next(-10, 11));
 
             Console.ReadLine();
         }
