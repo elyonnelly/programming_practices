@@ -7,15 +7,14 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-            Random rnd = new Random();
-            Teacher[] teacher = new Teacher[rnd.Next(1, 15)];
+            Teacher[] teacher = new Teacher[Rnd.rnd.Next(1, 15)];
             for (int i = 0; i < teacher.Length / 3; i++)
             {
-                teacher[i] = new Teacher(rnd.Next(20, 35), Rnd.CreateName(rnd));//посомтрите библеотеку
+                teacher[i] = new Teacher(Rnd.rnd.Next(20, 35), Rnd.CreateName());
             }
             for (int i = teacher.Length / 3; i < teacher.Length; i++)
             {
-                teacher[i] = new Teacher(rnd.Next(35, 60), Rnd.CreateName(rnd), Rnd.GetDegree(rnd));
+                teacher[i] = new Teacher(Rnd.rnd.Next(35, 60), Rnd.CreateName(), Rnd.GetDegree());
             }
             Print(teacher);
             Console.Read();

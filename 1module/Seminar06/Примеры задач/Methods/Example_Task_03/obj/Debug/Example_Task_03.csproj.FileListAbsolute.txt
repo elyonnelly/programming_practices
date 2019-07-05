@@ -1,6 +1,0 @@
-C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_03\bin\Debug\Example_Task_03.exe.config
-C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_03\bin\Debug\Example_Task_03.exe
-C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_03\bin\Debug\Example_Task_03.pdb
-C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_03\obj\Debug\Example_Task_03.csproj.CoreCompileInputs.cache
-C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_03\obj\Debug\Example_Task_03.exe
-C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_03\obj\Debug\Example_Task_03.pdb

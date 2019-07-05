@@ -8,21 +8,19 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            Random rnd = new Random();
-            ConsoleKeyInfo l;
             do
             {
                 List<Student> lststd = new List<Student>();
-                for (int i = 0; i < rnd.Next(5, 11); i++)
+                int rnk = Rnd.rnd.Next(5, 11);
+                for (int i = 0; i < rnk; i++)
                 {
-                    lststd.Add(new Student(rnd.Next(0, 8), Rnd.GetSex(rnd), Rnd.CreateName(rnd), rnd.Next(0, 10) + rnd.NextDouble()));
+                    lststd.Add(new Student(Rnd.rnd.Next(0, 8), Rnd.GetSex(), Rnd.CreateName(), Rnd.rnd.Next(0, 10) + Rnd.rnd.NextDouble()));
                     if (Student.CountOfStudents % 2 == 0)
-                        lststd[i].GetGraduate(rnd);
+                        lststd[i].GetGraduate(Rnd.rnd);
                 }
                 Print(lststd);
                 Console.WriteLine("To exit push Escape");
-                l = Console.ReadKey(true);
-            } while (l.Key != ConsoleKey.Escape);
+            } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
 
         /// <summary>
