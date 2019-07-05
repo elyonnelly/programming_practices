@@ -29,11 +29,12 @@ static class MatrixOperations
             }
             return arr;
         }
-        return null;
+        else
+            return null;
     }
 
-    internal static int[,] Parser(string[] strs)   // internal можно, т.к. Program и статический класс 
-                                                   // MatrixOperations находятся в одной сборке
+    internal static int[,] Parser(string[] strs)   // internal можно, т.к. Program и 
+                                                   // находятся в одной сборке
     {
         // в Parser (методе парсере) мы возвращаем null, если из массива строк 
         // нельзя сформировать матрицу (значит, в других методах 

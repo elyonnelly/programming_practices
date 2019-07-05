@@ -88,8 +88,8 @@ class Program
     {
         do
         {
-            string inputPath = @"../../input.txt";
-            string outputPath = @"../../output.txt";
+            string inputPath = "../../input.txt";
+            string outputPath = "../../output.txt";
             if (!File.Exists(inputPath))
             {
                 Console.WriteLine("input.txt не существует");

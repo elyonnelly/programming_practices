@@ -4,7 +4,7 @@ namespace ClassLibrary
 {
     public class Student
     {
-        public static int CountOfStudents{get;private set;}
+        public static int CountOfStudents;//количество студентов в вузе
         private int course;
         public int Course
         {
