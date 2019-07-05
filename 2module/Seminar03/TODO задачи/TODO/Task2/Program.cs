@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary;
-
+/*
+ * Создать массив элементов типа StaffMember и вывести о них информацию
+ */
 namespace Task2
 {
     class Program

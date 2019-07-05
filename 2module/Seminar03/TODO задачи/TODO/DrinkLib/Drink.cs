@@ -16,8 +16,8 @@ namespace DrinkLib
          тип только juice, tea или coffee. По умолчанию сок
          Вместимость от 1 до 1000, иначе случайное число в этом промежутке
         */
-        public bool IsSugar { get; private set; }
-        public bool IsMilk { get; private set; }
+        public bool HasSugar { get; private set; }
+        public bool HasMilk { get; private set; }
         public int Temperature { get; private set; }
         public string Type { get; private set; }
         public double Capacity { get; private set; }
@@ -30,8 +30,8 @@ namespace DrinkLib
 
         public Drink()
         {
-            IsSugar = false;
-            IsMilk = false;
+            HasSugar = false;
+            HasMilk = false;
             Capacity = 200;
             Type = "Juice";
             Temperature = 20;

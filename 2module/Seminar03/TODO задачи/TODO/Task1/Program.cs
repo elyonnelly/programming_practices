@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DrinkLib;
-
+/*
+ * Создать массив элементов типа Drink и вывести о них информацию
+ */
 namespace Task1
 {
     class Program
@@ -22,7 +24,7 @@ namespace Task1
             Random rnd = new Random();
             foreach (var item in drinks)
             {
-                //Console.WriteLine(item[rnd.Next(-100, 100)]); //раскомментировать
+                Console.WriteLine(item[rnd.Next(-100, 100)]); 
             }
 
             Console.ReadLine();
