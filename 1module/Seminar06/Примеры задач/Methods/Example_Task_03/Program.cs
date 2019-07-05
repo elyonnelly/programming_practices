@@ -16,7 +16,7 @@ namespace Example_Task_03
         /// <param name="number">Число</param>
         /// <param name="sumEven">Сумма цифр на четных позициях</param>
         /// <param name="sumOdd">Сумма цифр на нечетных позициях</param>
-        static void Sums(uint number, out uint sumEven, out uint sumOdd)
+        private static void Sums(uint number, out uint sumEven, out uint sumOdd)
         {
             sumEven = 0;
             sumOdd = 0;
