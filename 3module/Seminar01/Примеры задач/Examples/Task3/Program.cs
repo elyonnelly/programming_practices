@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task3
 {
-    delegate Point MoveDelelegate(); // делегат-тип
+    delegate Point MoveDel(); // делегат-тип
 
     class Robot
     {
@@ -59,27 +59,27 @@ namespace Task3
         {
             Robot rob = new Robot();
 
-            MoveDelelegate[] traceArr = new MoveDelelegate[10]; // Массив делегатов, представляет перемещение робота на плоскости
+            MoveDel[] traceArr = new MoveDel[10]; // Массив делегатов, представляет перемещение робота на плоскости
 
-            MoveDelelegate trace = null; // Многоадресный делегат, представляет перемещение робота на плоскости
+            MoveDel trace = null; // Многоадресный делегат, представляет перемещение робота на плоскости
             for (int i = 0; i < 10; i++)
             {
                 switch (rnd.Next(4))
                 { // Заполняем массив, дублируя методы в многоадресный делегат
                     case 0:
-                        traceArr[i] = new MoveDelelegate(rob.Forward);
+                        traceArr[i] = new MoveDel(rob.Forward);
                         trace += rob.Forward; // Можно добавлять несколько раз один и тот же метод к делегату
                         break;
                     case 1:
-                        traceArr[i] = new MoveDelelegate(rob.Backward);
+                        traceArr[i] = new MoveDel(rob.Backward);
                         trace += rob.Backward;
                         break;
                     case 2:
-                        traceArr[i] = new MoveDelelegate(rob.Left);
+                        traceArr[i] = new MoveDel(rob.Left);
                         trace += rob.Left;
                         break;
                     case 3:
-                        traceArr[i] = new MoveDelelegate(rob.Right);
+                        traceArr[i] = new MoveDel(rob.Right);
                         trace += rob.Right;
                         break;
                 }
