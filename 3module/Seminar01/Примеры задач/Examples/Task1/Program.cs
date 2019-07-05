@@ -15,13 +15,13 @@ namespace Task1
         static void Main()
         {
             // Анонимный метод
-            Cast firstHangler = null; // null нужен только для того чтобы испоьлзовать += . Можно избежать 
-            firstHangler += delegate (double val)
+            Cast firstHandler = null; // null нужен только для того чтобы испоьлзовать += . Можно избежать 
+            firstHandler += delegate (double val)
             { // Помните ли вы, как работает следующая стока?
                 return Math.Ceiling(val) % 2 == 0 ? (int)Math.Ceiling(val) : (int)Math.Floor(val);
             };
 
-            Cast secondHangler = delegate (double val)
+            Cast secondHandler = delegate (double val)
             {
                 return (int)Math.Truncate(Math.Exp(Math.Sqrt(val)));
             };
@@ -32,7 +32,7 @@ namespace Task1
             {
                 double value = Math.Round(rnd.Next(0, 64) + rnd.NextDouble(), 4);
                 array[i] = value;
-                Console.WriteLine($"value = {value}; \t firstHangler(value) = {firstHangler(value)} \t secondHangler(value) = {secondHangler(value)}");
+                Console.WriteLine($"value = {value}; \t firstHandler(value) = {firstHandler(value)} \t secondHandler(value) = {secondHandler(value)}");
             }
             Console.ReadLine();
         }
