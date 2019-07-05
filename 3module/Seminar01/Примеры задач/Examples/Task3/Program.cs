@@ -33,7 +33,7 @@ namespace Task3
         }
     }
 
-    internal class Point
+    struct Point
     {
         public Point(int x, int y)
         {
@@ -68,19 +68,19 @@ namespace Task3
                 { // Заполняем массив, дублируя методы в многоадресный делегат
                     case 0:
                         traceArr[i] = new MoveDel(rob.Forward);
-                        trace += traceArr[i];
+                        trace += rob.Forward; // Можно добавлять несколько раз один и тот же метод к делегату
                         break;
                     case 1:
                         traceArr[i] = new MoveDel(rob.Backward);
-                        trace += traceArr[i];
+                        trace += rob.Backward;
                         break;
                     case 2:
                         traceArr[i] = new MoveDel(rob.Left);
-                        trace += traceArr[i];
+                        trace += rob.Left;
                         break;
                     case 3:
                         traceArr[i] = new MoveDel(rob.Right);
-                        trace += traceArr[i];
+                        trace += rob.Right;
                         break;
                 }
             }
@@ -97,7 +97,7 @@ namespace Task3
 
             Console.WriteLine("=============");
             Console.WriteLine("Многоадресный делегат:");
-            Console.WriteLine(trace()); // Обратите внимание, что выполняюся все делегаты, но возвращается значение только последнее
+            Console.WriteLine(trace()); // Обратите внимание, что выполняюся все делегаты, но возвращается значение только последнего
 
             Console.Read();
         }
