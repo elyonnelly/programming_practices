@@ -62,10 +62,15 @@ namespace Task1
             {
                 Console.WriteLine("Файл не найден!");
             }
-            catch (IOException ex)
+            catch (IOException)
+            {
+                Console.WriteLine("Ошибка при чтении из файла!");
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+            
             Console.ReadKey();
         }
     }
