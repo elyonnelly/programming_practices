@@ -18,7 +18,7 @@ namespace HumanLibrary
     public static class Human
     {
         private static string[] namesMale = { "Петя", "Ваня", "Саша", "Антон",
-            "Федя", "Миша", "Макс", "Коля", "Вова", "Иннокентий" };
+            "Федя", "Миша", "Макс", "Коля", "Вова", "Иннокентий", "Влад" };
 
         private static string[] namesFemale = { "Маша", "Саша", "Катя", "Юля",
             "Наташа", "Лиля", "Алина", "Виталина", "Вика" };
