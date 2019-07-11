@@ -1,0 +1,6 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\bin\Debug\PictureBoxExampleClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\bin\Debug\PictureBoxExampleClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.pdb
