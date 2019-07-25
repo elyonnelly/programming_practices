@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Zoo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AllAnimals>
+    <Animal xsi:type="Insect">
+      <Kind>Spider</Kind>
+      <CountOfLegs>6</CountOfLegs>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>119.95979992950326</Speed>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>15.274859753099671</Speed>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>90.633185393006158</Speed>
+    </Animal>
+    <Animal xsi:type="Insect">
+      <Kind>Spider</Kind>
+      <CountOfLegs>8</CountOfLegs>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>129.58718503200782</Speed>
+    </Animal>
+    <Animal xsi:type="Insect">
+      <Kind>Spider</Kind>
+      <CountOfLegs>6</CountOfLegs>
+    </Animal>
+    <Animal xsi:type="Insect">
+      <Kind>Spider</Kind>
+      <CountOfLegs>8</CountOfLegs>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>109.4401618453861</Speed>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>92.6597748536895</Speed>
+    </Animal>
+    <Animal xsi:type="Insect">
+      <Kind>Spider</Kind>
+      <CountOfLegs>9</CountOfLegs>
+    </Animal>
+    <Animal xsi:type="Insect">
+      <Kind>Spider</Kind>
+      <CountOfLegs>10</CountOfLegs>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>24.115478041635583</Speed>
+    </Animal>
+    <Animal xsi:type="Bird">
+      <Kind>Bird</Kind>
+      <Speed>71.583215437169756</Speed>
+    </Animal>
+  </AllAnimals>
+</Zoo>

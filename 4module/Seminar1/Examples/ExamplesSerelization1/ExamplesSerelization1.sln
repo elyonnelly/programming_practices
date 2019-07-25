@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1(Бинарная десереализация)", "Tak1(Бинарная десереализация)\Task1(Бинарная десереализация).csproj", "{97336986-BFE6-453E-BE7A-53AC743AE3DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2XMLSerelization", "Task2XMLSerelization\Task2XMLSerelization.csproj", "{F28144E1-A728-40FF-8AF0-8BD70AA2A2C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{97336986-BFE6-453E-BE7A-53AC743AE3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97336986-BFE6-453E-BE7A-53AC743AE3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97336986-BFE6-453E-BE7A-53AC743AE3DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28144E1-A728-40FF-8AF0-8BD70AA2A2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28144E1-A728-40FF-8AF0-8BD70AA2A2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28144E1-A728-40FF-8AF0-8BD70AA2A2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28144E1-A728-40FF-8AF0-8BD70AA2A2C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
