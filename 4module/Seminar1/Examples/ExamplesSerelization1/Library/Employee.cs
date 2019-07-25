@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library
 {
@@ -34,6 +30,7 @@ namespace Library
             get => age;
             private set
             {
+                //реализация свобвенного исключения правая кнопка мыши, быстродецсвия рефакторинг, создать собсвенное исключение
                 if (value < 18 || value > 65) throw new Ovverrun("Человек должен быть совершеннолетним и не пенсионером");
                 age = value;
             }

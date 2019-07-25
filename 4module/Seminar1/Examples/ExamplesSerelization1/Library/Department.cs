@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library
 {
@@ -45,6 +42,7 @@ namespace Library
         {
             Staff.Add(person);
         }
+
         public override string ToString()
         {
             return $"{base.ToString()}\nDepartment Name : {DepartmentName}, Number of employee: {staff.Count}\nAll Staff:\n {GetAllStaff()}";

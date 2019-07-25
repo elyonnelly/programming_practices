@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using Library;
@@ -14,10 +10,26 @@ namespace Tak1_Бинарная_десереализация_
     {
         static void Main(string[] args)
         {
-            FileStream fs = new FileStream("../../../Yandex.bin", FileMode.Open);
-            BinaryFormatter bin = new BinaryFormatter();
-            Enterprise Yandex =(Enterprise) bin.Deserialize(fs);
-            Console.WriteLine(Yandex.ToString());
+            try
+            {
+                FileStream fs = new FileStream("../../../Yandex.bin", FileMode.Open);
+                BinaryFormatter bin = new BinaryFormatter();
+                Enterprise Yandex = (Enterprise)bin.Deserialize(fs);
+                Console.WriteLine(Yandex.ToString());
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("File not found");
+            }
+            catch (IOException)
+            //можете навести курсов на FileStream и посмотреть список всех ошибок, которые пораждаются потоком открытия файла
+            {
+                Console.WriteLine("something went wrong");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("something went wrong");
+            }
             Console.Read();
         }
     }
