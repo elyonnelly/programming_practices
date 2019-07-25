@@ -22,6 +22,6 @@ namespace LibraryOfZoo
         {
             CountOfLegs = speed;
         }
-        public override string ToString() => $"Kind: {Kind}, Speed : {CountOfLegs:f3}";//все поля публичные поэтому можем использовать вид
+        public override string ToString() => $"Kind: {Kind}, Count of legs : {CountOfLegs:f3}";//все поля публичные поэтому можем использовать вид
     }
 }
