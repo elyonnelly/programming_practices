@@ -9,9 +9,13 @@ namespace SampleTaskLib
     public class LimitedSymbolChain : SymbolChain
     {
         /// <summary>
-        /// Коды левой и правой границ допустимых символов
+        /// Код левой границы допустимых символов
         /// </summary>
-        char StartCode, EndCode;
+        char StartCode;
+        /// <summary>
+        /// Код правой границы допустимых символов
+        /// </summary>
+        char EndCode;
 
         /// <summary>
         /// Конструктор для создания экземпляра цепочки символов

@@ -1,0 +1,7 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_02\bin\Debug\Example_Task_02.exe.config
+C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_02\bin\Debug\Example_Task_02.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_02\bin\Debug\Example_Task_02.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_02\obj\Debug\Example_Task_02.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_02\obj\Debug\Example_Task_02.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_02\obj\Debug\Example_Task_02.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\Methods\Example_Task_02\obj\Debug\Example_Task_02.pdb

@@ -3,7 +3,7 @@
  * Группа: БПИ182
  * Дата: 03.07.2019
  * Задача: В папке с решением создать файл text.txt, записать в него строчку
- *         "Использую FileStream для создания текстовых файлов B)\n" (\n для 
+ *         "Использую FileStream для создания текстовых файлов и радуюсь жизни B)\n" (\n для 
  *         перехода на новую строчку). Не забывайте про то, что строка содержит
  *         кириллицу. Затем дозапишите в файл строчку
  *         "London is the capital of Great Britain" и закройте поток.
@@ -28,7 +28,7 @@ namespace Task1
             {
                 using (FileStream fs = new FileStream(PATH, FileMode.Create))
                 {
-                    string s = "Использую FileStream для создания текстовых файлов B)\n";
+                    string s = "Использую FileStream для создания текстовых файлов и радуюсь жизни B)\n";
                     byte[] info = new UTF8Encoding(true).GetBytes(s);
                     fs.Write(info, 0, info.Length);
                     s = "London is the capital of Great Britain";

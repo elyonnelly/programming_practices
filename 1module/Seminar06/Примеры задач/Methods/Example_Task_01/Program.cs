@@ -14,9 +14,9 @@ namespace Example_Task_01
         /// <summary>
         /// Метод для вычисления и вывода заданного числа в обратном порядке.
         /// </summary>
-        /// <param name="num"></param>
+        /// <param name="num">Число, которое необходимо записать в обратном порядке</param>
         /// <returns></returns>
-        public static int ReverseNumber(int num)
+        private static int ReverseNumber(int num)
         {
             if (num < 10)
             {

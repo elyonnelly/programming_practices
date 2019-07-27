@@ -1,0 +1,5 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\WF_TODOTasks_ClassLibrary\bin\Debug\WF_TODOTasks_ClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\WF_TODOTasks_ClassLibrary\bin\Debug\WF_TODOTasks_ClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\WF_TODOTasks_ClassLibrary\obj\Debug\WF_TODOTasks_ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\WF_TODOTasks_ClassLibrary\obj\Debug\WF_TODOTasks_ClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\WF_TODOTasks_ClassLibrary\obj\Debug\WF_TODOTasks_ClassLibrary.pdb

@@ -16,7 +16,7 @@ namespace Football
      Определить класс RedPlayer, который наследуется от Player и имеет side = 1
      Определить класс BluePlayer, который наследуется от Player и имеет side = -1
 
-     Создать статический метод метод void Randomise(ref Player[]),
+     Создать статический метод void Randomise(ref Player[]),
      который перемешивает все объекты в массиве.
      
      В основной программе создать Player[] players, размером 22, в первых
@@ -32,7 +32,7 @@ namespace Football
     {
         static Random rnd = new Random();
 
-        static void Randomise(ref Player[] players)
+        static void Randomise( Player[] players)
         {
             for (int i = 0; i < players.Length; i++)
             {
@@ -59,7 +59,7 @@ namespace Football
                     players[i] = new BluePlayer(rnd.Next(50));
                 }
 
-                Randomise(ref players);
+                Randomise( players);
 
                 foreach (var item in players)
                 {

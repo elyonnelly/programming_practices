@@ -24,7 +24,7 @@ namespace Example_Task_02
         /// <param name="b">Cторона b</param>
         /// <param name="c">Сторона c</param>
         /// <returns></returns>
-        static bool TriangleExists(double a, double b, double c)
+        private static bool TriangleExists(double a, double b, double c)
         {
             return ((a + b > c) && (b + c > a) && (a + c > b));
         }
@@ -34,10 +34,10 @@ namespace Example_Task_02
         /// </summary>
         /// <param name="a">Сторона a</param>
         /// <param name="b">Cторона b</param>
-        /// <param name="c">Сторона c</param>
+        /// <param name="c">Сторона c</param>=
         /// <param name="p">Периметр</param>
         /// <returns></returns>
-        static bool Perimeter(double a, double b, double c, out double p)
+        private static bool Perimeter(double a, double b, double c, out double p)
         {
             if (!TriangleExists(a, b, c))
             {
@@ -59,7 +59,7 @@ namespace Example_Task_02
         /// <param name="c">Сторона c</param>
         /// <param name="s">Площади</param>
         /// <returns></returns>
-        static bool Square(double a, double b, double c, ref double s)
+        private static bool Square(double a, double b, double c, ref double s)
         {
             if (!TriangleExists(a, b, c))
                 return false;

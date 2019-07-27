@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Football
 {
     class Player
+        //Класс, который определяет игрока. Есть поля сила и сторона игры(по умолчанию она равно 0)
     {
         int Force;
         protected int side = 0;
@@ -24,7 +25,7 @@ namespace Football
 
     class RedPlayer : Player
     {
-        public RedPlayer(int force) : base(force)
+        public RedPlayer(int force) : base(force)//Определяем сторону
         {
             side = 1;
         }
@@ -32,7 +33,7 @@ namespace Football
 
     class BluePlayer : Player
     {
-        public BluePlayer(int force) : base(force)
+        public BluePlayer(int force) : base(force)//Определяем сьорону
         {
             side = -1;
         }
