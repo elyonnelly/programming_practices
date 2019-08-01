@@ -1,0 +1,13 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\bin\Debug\TODO_Task_02.exe.config
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\bin\Debug\TODO_Task_02.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\bin\Debug\TODO_Task_02.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\bin\Debug\WF_TODOTasks_ClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\bin\Debug\WF_TODOTasks_ClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.GameForm.resources
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.Properties.Resources.resources
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.csproj.GenerateResource.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.csproj.CopyComplete
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_02\obj\Debug\TODO_Task_02.pdb
