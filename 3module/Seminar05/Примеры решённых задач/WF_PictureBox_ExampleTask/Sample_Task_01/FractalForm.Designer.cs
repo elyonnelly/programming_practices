@@ -57,10 +57,10 @@
             // 
             this.hScrollBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.hScrollBar.Location = new System.Drawing.Point(52, 346);
+            this.hScrollBar.Location = new System.Drawing.Point(58, 432);
             this.hScrollBar.Maximum = 109;
             this.hScrollBar.Name = "hScrollBar";
-            this.hScrollBar.Size = new System.Drawing.Size(173, 21);
+            this.hScrollBar.Size = new System.Drawing.Size(259, 21);
             this.hScrollBar.TabIndex = 0;
             this.hScrollBar.ValueChanged += new System.EventHandler(this.HScrollBar_ValueChanged);
             // 
@@ -68,11 +68,11 @@
             // 
             this.maskedTextBoxOpacity.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedTextBoxOpacity.ForeColor = System.Drawing.Color.Teal;
-            this.maskedTextBoxOpacity.Location = new System.Drawing.Point(190, 288);
-            this.maskedTextBoxOpacity.Margin = new System.Windows.Forms.Padding(4);
+            this.maskedTextBoxOpacity.Location = new System.Drawing.Point(214, 360);
+            this.maskedTextBoxOpacity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskedTextBoxOpacity.Mask = "000";
             this.maskedTextBoxOpacity.Name = "maskedTextBoxOpacity";
-            this.maskedTextBoxOpacity.Size = new System.Drawing.Size(42, 31);
+            this.maskedTextBoxOpacity.Size = new System.Drawing.Size(47, 36);
             this.maskedTextBoxOpacity.TabIndex = 3;
             this.maskedTextBoxOpacity.TextChanged += new System.EventHandler(this.MaskedTextBoxOpacity_TextChanged);
             // 
@@ -83,9 +83,9 @@
             this.recursionDepthLabel.AutoSize = true;
             this.recursionDepthLabel.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.recursionDepthLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.recursionDepthLabel.Location = new System.Drawing.Point(49, 15);
+            this.recursionDepthLabel.Location = new System.Drawing.Point(55, 19);
             this.recursionDepthLabel.Name = "recursionDepthLabel";
-            this.recursionDepthLabel.Size = new System.Drawing.Size(168, 26);
+            this.recursionDepthLabel.Size = new System.Drawing.Size(194, 30);
             this.recursionDepthLabel.TabIndex = 4;
             this.recursionDepthLabel.Text = "Recursion depth";
             // 
@@ -93,10 +93,10 @@
             // 
             this.recursionDepthTrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.recursionDepthTrackBar.Location = new System.Drawing.Point(46, 41);
-            this.recursionDepthTrackBar.Margin = new System.Windows.Forms.Padding(20);
+            this.recursionDepthTrackBar.Location = new System.Drawing.Point(52, 51);
+            this.recursionDepthTrackBar.Margin = new System.Windows.Forms.Padding(22, 25, 22, 25);
             this.recursionDepthTrackBar.Name = "recursionDepthTrackBar";
-            this.recursionDepthTrackBar.Size = new System.Drawing.Size(189, 56);
+            this.recursionDepthTrackBar.Size = new System.Drawing.Size(277, 69);
             this.recursionDepthTrackBar.TabIndex = 5;
             this.recursionDepthTrackBar.Scroll += new System.EventHandler(this.RecursionDepthTrackBar_Scroll);
             // 
@@ -108,9 +108,9 @@
             this.labelDisplayDepth.BackColor = System.Drawing.Color.White;
             this.labelDisplayDepth.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDisplayDepth.ForeColor = System.Drawing.Color.Teal;
-            this.labelDisplayDepth.Location = new System.Drawing.Point(214, 15);
+            this.labelDisplayDepth.Location = new System.Drawing.Point(264, 19);
             this.labelDisplayDepth.Name = "labelDisplayDepth";
-            this.labelDisplayDepth.Size = new System.Drawing.Size(18, 26);
+            this.labelDisplayDepth.Size = new System.Drawing.Size(20, 30);
             this.labelDisplayDepth.TabIndex = 10;
             this.labelDisplayDepth.Text = " ";
             // 
@@ -122,18 +122,19 @@
             this.labelStartColor.AutoSize = true;
             this.labelStartColor.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelStartColor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStartColor.Location = new System.Drawing.Point(49, 131);
+            this.labelStartColor.Location = new System.Drawing.Point(55, 164);
             this.labelStartColor.Name = "labelStartColor";
-            this.labelStartColor.Size = new System.Drawing.Size(112, 26);
+            this.labelStartColor.Size = new System.Drawing.Size(128, 30);
             this.labelStartColor.TabIndex = 12;
             this.labelStartColor.Text = "Start color";
             // 
             // buttonStartColor
             // 
             this.buttonStartColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonStartColor.Location = new System.Drawing.Point(165, 196);
+            this.buttonStartColor.Location = new System.Drawing.Point(250, 245);
+            this.buttonStartColor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonStartColor.Name = "buttonStartColor";
-            this.buttonStartColor.Size = new System.Drawing.Size(60, 60);
+            this.buttonStartColor.Size = new System.Drawing.Size(68, 75);
             this.buttonStartColor.TabIndex = 13;
             this.buttonStartColor.UseVisualStyleBackColor = true;
             this.buttonStartColor.Click += new System.EventHandler(this.ButtonStartColor_Click);
@@ -145,18 +146,19 @@
             this.labelEndColor.AutoSize = true;
             this.labelEndColor.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelEndColor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelEndColor.Location = new System.Drawing.Point(49, 212);
+            this.labelEndColor.Location = new System.Drawing.Point(55, 265);
             this.labelEndColor.Name = "labelEndColor";
-            this.labelEndColor.Size = new System.Drawing.Size(102, 26);
+            this.labelEndColor.Size = new System.Drawing.Size(117, 30);
             this.labelEndColor.TabIndex = 14;
             this.labelEndColor.Text = "End color";
             // 
             // buttonEndColor
             // 
             this.buttonEndColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEndColor.Location = new System.Drawing.Point(165, 115);
+            this.buttonEndColor.Location = new System.Drawing.Point(250, 144);
+            this.buttonEndColor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonEndColor.Name = "buttonEndColor";
-            this.buttonEndColor.Size = new System.Drawing.Size(60, 60);
+            this.buttonEndColor.Size = new System.Drawing.Size(68, 75);
             this.buttonEndColor.TabIndex = 15;
             this.buttonEndColor.UseVisualStyleBackColor = true;
             this.buttonEndColor.Click += new System.EventHandler(this.ButtonEndColor_Click);
@@ -168,9 +170,9 @@
             this.formOpacityLabel.AutoSize = true;
             this.formOpacityLabel.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.formOpacityLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.formOpacityLabel.Location = new System.Drawing.Point(49, 293);
+            this.formOpacityLabel.Location = new System.Drawing.Point(55, 366);
             this.formOpacityLabel.Name = "formOpacityLabel";
-            this.formOpacityLabel.Size = new System.Drawing.Size(139, 26);
+            this.formOpacityLabel.Size = new System.Drawing.Size(159, 30);
             this.formOpacityLabel.TabIndex = 16;
             this.formOpacityLabel.Text = "Form opacity";
             // 
@@ -181,9 +183,10 @@
             this.buttonSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonSave.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSave.ForeColor = System.Drawing.Color.Teal;
-            this.buttonSave.Location = new System.Drawing.Point(79, 403);
+            this.buttonSave.Location = new System.Drawing.Point(89, 504);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(124, 43);
+            this.buttonSave.Size = new System.Drawing.Size(204, 54);
             this.buttonSave.TabIndex = 17;
             this.buttonSave.Text = "Save as";
             this.buttonSave.UseVisualStyleBackColor = true;
@@ -195,8 +198,9 @@
             this.pictureBoxFractal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBoxFractal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxFractal.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxFractal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBoxFractal.Name = "pictureBoxFractal";
-            this.pictureBoxFractal.Size = new System.Drawing.Size(680, 485);
+            this.pictureBoxFractal.Size = new System.Drawing.Size(916, 643);
             this.pictureBoxFractal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxFractal.TabIndex = 21;
             this.pictureBoxFractal.TabStop = false;
@@ -208,9 +212,10 @@
             this.panelFractal.BackColor = System.Drawing.Color.White;
             this.panelFractal.Controls.Add(this.pictureBoxFractal);
             this.panelFractal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFractal.Location = new System.Drawing.Point(297, 3);
+            this.panelFractal.Location = new System.Drawing.Point(397, 4);
+            this.panelFractal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelFractal.Name = "panelFractal";
-            this.panelFractal.Size = new System.Drawing.Size(680, 485);
+            this.panelFractal.Size = new System.Drawing.Size(916, 643);
             this.panelFractal.TabIndex = 22;
             this.panelFractal.Resize += new System.EventHandler(this.PanelFractal_Resize);
             // 
@@ -226,10 +231,11 @@
             this.tableLayoutPanel.Controls.Add(this.controlPanel, 0, 0);
             this.tableLayoutPanel.Controls.Add(this.panelFractal, 1, 0);
             this.tableLayoutPanel.Location = new System.Drawing.Point(2, 0);
+            this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 1;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(980, 491);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(1316, 651);
             this.tableLayoutPanel.TabIndex = 23;
             // 
             // controlPanel
@@ -250,19 +256,21 @@
             this.controlPanel.Controls.Add(this.formOpacityLabel);
             this.controlPanel.Controls.Add(this.labelEndColor);
             this.controlPanel.Controls.Add(this.buttonStartColor);
-            this.controlPanel.Location = new System.Drawing.Point(3, 3);
+            this.controlPanel.Location = new System.Drawing.Point(3, 4);
+            this.controlPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.controlPanel.Name = "controlPanel";
-            this.controlPanel.Size = new System.Drawing.Size(288, 485);
+            this.controlPanel.Size = new System.Drawing.Size(388, 643);
             this.controlPanel.TabIndex = 0;
             // 
             // FractalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(984, 491);
+            this.ClientSize = new System.Drawing.Size(1321, 651);
             this.Controls.Add(this.tableLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FractalForm";
             ((System.ComponentModel.ISupportInitialize)(this.recursionDepthTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFractal)).EndInit();
@@ -291,8 +299,14 @@
         public System.Windows.Forms.PictureBox pictureBoxFractal;
         private System.Windows.Forms.ColorDialog startColorDialog;
         private System.Windows.Forms.ColorDialog endColorDialog;
+        /// <summary>
+        /// Панель, хранящая в себе все компоненты, связанные с фракталом
+        /// </summary>
         private System.Windows.Forms.Panel panelFractal;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
+        /// <summary>
+        /// Панель, хранящая в себе все компоненты, управляющие отрисовкой фрактала
+        /// </summary>
         private System.Windows.Forms.Panel controlPanel;
     }
 }

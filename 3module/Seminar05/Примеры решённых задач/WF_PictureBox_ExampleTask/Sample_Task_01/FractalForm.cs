@@ -26,28 +26,39 @@ namespace Sample_Task_01
         /// </summary>
         public FractalForm()
         {
+            //Метод, добавляющий на форму все компоненты, которые мы заявили в дизайнере форм (как то: label, PictureBox, etc.)
             InitializeComponent();
+
+            //У самой формы и ее компонентов есть множество свойств,
+            //которые вы можете посмотреть во вкладке Properies (Свойства), если нажать на интересующий компонент формы в дизайнере.
             hScrollBar.Value = 100;
             hScrollBar.Minimum = 15;
             // Получение разрешения экрана устройства
             Size resolution = Screen.PrimaryScreen.Bounds.Size;
-            // Минимальный размер формы
-            MinimumSize = new Size(resolution.Width / 2, resolution.Height / 2);
-            // Максимальный размер формы
+            // Зададим минимальный размер формы
+            MinimumSize = new Size(resolution.Width / 2 + 100, resolution.Height / 2 + 100);
+            // Зададим максимальный размер формы
             MaximumSize = resolution;
+            // Задание минимального выбираемого значения глубины рекурсии
+            recursionDepthTrackBar.Minimum = 1;
+            // Задание максимального выбираемого значения глубины рекурсии
+            recursionDepthTrackBar.Maximum = Fractal.MAXRECURSIONDEPTH;
         }
         /// <summary>
         /// Обработчик события, возникающего при изменении значения прозрачности в поле ввода maskedTextBox.
-        /// В maskedTextBox задана маска 000, при возникновении ситуаций, когда введено число 100 < opacity < 1000,
-        /// обрабатываем возникающее исключение FormatException.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void MaskedTextBoxOpacity_TextChanged(object sender, EventArgs e)
         {
+            /* В maskedTextBox задана маска 000 (0 -- любая цифра), так что на ввод в поле принимаются только не более чем трехзначные числа.
+             * При возникновении ситуаций, когда введено число 100 < opacity < 1000, 
+             * обрабатываем исключение FormatException,
+             * которое выбрасывается при попытке поставить свойству Opacity (прозрачность) значение большее 100%. */
+
             try
             {
-                Opacity = double.Parse(maskedTextBoxOpacity.Text) / 100;
+                Opacity = double.Parse(((MaskedTextBox)sender).Text) / 100;
             }
             catch (FormatException)
             {
@@ -55,12 +66,14 @@ namespace Sample_Task_01
             }
         }
         /// <summary>
-        /// Обработчик события, возникающего при изменении положения слайдера scrollBar'a.
+        /// Обработчик события, возникающего при изменении положения слайдера scrollBar'a
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void HScrollBar_ValueChanged(object sender, EventArgs e)
         {
+            //с помощью scrollBar'a тоже можно менять прозрачность формы, если считывать требуемый процент прозрачность с scrollBar. 
+            //свойство Value у ScrollBar всегда от 0 до 100 (по сути, на какую долю был сдвинут ползунок скролла).
             maskedTextBoxOpacity.Text = ((HScrollBar)sender).Value.ToString();
         }
         /// <summary>
@@ -82,56 +95,62 @@ namespace Sample_Task_01
         /// <summary>
         /// Обработчик события, возникающего при нажатии на кнопку выбора начального цвета
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void ButtonStartColor_Click(object sender, EventArgs e)
         {
+            /* Среди возможных компонентов для формы есть SomeDialog, то есть диалоговые окна.
+             * Например, ColorDialog представляет общее диалоговое окно, в котором отображаются доступные цвета и элементы управления,
+             * позволяющие пользователю определять собственные цвета. FolderDialog позволяет пользователю выбрать папку в проводнике.
+             * После окончания работы пользователя с диалоговым окном, компонент в соответствующих свойствах хранит
+             * всю интересующую нас информацию.*/
+
+            ColorDialog startColor = (ColorDialog)sender;
+
             // Отображение диалогового окна для выбора начального цвета
-            DialogResult SResult = startColorDialog.ShowDialog();
-            // Проверка выбора цвета
+            DialogResult SResult = startColor.ShowDialog();
+            // Проверка выбора цвета. SResult хранит информацию о том, как закончился диалог с пользователем. OK -- успешно,
+            // т.е. в конкретной ситуации -- пользователь выбрал цвет.
             if (SResult == DialogResult.OK)
                 // Присвоение кнопке начального цвета выбранного цвета
-                buttonStartColor.BackColor = startColorDialog.Color;
+                buttonStartColor.BackColor = startColor.Color;
             // Отрисовка фрактала с использованием начального цвета
             PaintFractal(panelFractal.Height, panelFractal.Width);
         }
         /// <summary>
         /// Обработчик события, возникающего при нажатии на кнопку выбора конечного цвета
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void ButtonEndColor_Click(object sender, EventArgs e)
         {
+            ColorDialog endColor = (ColorDialog)sender;
             // Отображение диалогового окна для выбора цвета
-            DialogResult EResult = endColorDialog.ShowDialog();
+            DialogResult EResult = endColor.ShowDialog();
             // Проверка выбора цвета
             if (EResult == DialogResult.OK)
                 // Присвоение кнопке конечного цвета выбранного цвета
-                buttonEndColor.BackColor = endColorDialog.Color;
+                buttonEndColor.BackColor = endColor.Color;
             // Отрисовка фрактала с использованием конечного цвета
             PaintFractal(panelFractal.Height, panelFractal.Width);
         }
         /// <summary>
         /// Обработчик события, возникающего при изменении глубины рекурсии
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void RecursionDepthTrackBar_Scroll(object sender, EventArgs e)
         {
-            // Pадание минимального выбираемого значения глубины рекурсии
-            recursionDepthTrackBar.Minimum = 1;
-            // Задание максимального выбираемого значения глубины рекурсии
-            recursionDepthTrackBar.Maximum = Fractal.MAXRECURSIONDEPTH;
             // Вывод значения выбранной глубины рекурсии
-            labelDisplayDepth.Text = recursionDepthTrackBar.Value.ToString();
+            labelDisplayDepth.Text = ((TrackBar)sender).Value.ToString();
             // Отрисовка фрактала в соответствии с выбранной глубиной рекурсии                                          
             PaintFractal(panelFractal.Height, panelFractal.Width);
         }
         /// <summary>
         /// Обработчик события, возникающего при изменении размеров панели
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void PanelFractal_Resize(object sender, EventArgs e)
         {
             // Определение меньшей границы панели
@@ -147,8 +166,8 @@ namespace Sample_Task_01
         /// <summary>
         /// Обработчик события, возникающего при нажатии на кнопку сохранения изображения
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void ButtonSave_Click(object sender, EventArgs e)
         {
             // Создание диалогового окна "Сохранить как..", для сохранения изображения

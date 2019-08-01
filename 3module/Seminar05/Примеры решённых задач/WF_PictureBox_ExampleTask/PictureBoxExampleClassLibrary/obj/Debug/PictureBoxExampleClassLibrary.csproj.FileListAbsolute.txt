@@ -4,3 +4,9 @@ C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_Examp
 C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.dll
 C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.pdb
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\bin\Debug\PictureBoxExampleClassLibrary.dll
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\bin\Debug\PictureBoxExampleClassLibrary.pdb
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.csprojAssemblyReference.cache
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.dll
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\PictureBoxExampleClassLibrary\obj\Debug\PictureBoxExampleClassLibrary.pdb

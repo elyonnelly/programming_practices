@@ -17,8 +17,8 @@ namespace Sample_Task_02
         /// <summary>
         /// Обработчик события, возникающего при задании количества ячеек в коллаже
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void CreateCollageButton_Click(object sender, EventArgs e)
         {
             ImageForm.widthCells = int.Parse(widthMaskedTextBox.Text);

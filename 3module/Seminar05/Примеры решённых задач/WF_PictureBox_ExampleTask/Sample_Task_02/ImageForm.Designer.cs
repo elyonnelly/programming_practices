@@ -108,9 +108,15 @@
 
         #endregion
 
+        /// <summary>
+        /// Компонент меню для работы над коллажем
+        /// </summary>
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.Button createButton;
+        /// <summary>
+        /// Панель, хранящая в себе кнопки-ячейки для фотографий, размещая их в виде таблицы
+        /// </summary>
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
     }
 }
