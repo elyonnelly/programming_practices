@@ -7,7 +7,8 @@
  * SatteliteForm:   StartPosition = CenterScreen, Text = Спутник
  * StartButton:     Text = Запуск,  Anchor = Top, Left, Right
  * PictureBox: 	    Anchor (прикрепить все стороны), BorderStyle = FixedSingle, Dock = None
- * Timer: 	        Свойства задать в конструкторе формы. */
+ * Timer: 	        Интервал срабатывания: 100
+ * Свойства задать в конструкторе формы. */
 
 /* TODO: Дополнить программу возможностью «посадки» спутника. 
  * Варианты решения: 

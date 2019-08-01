@@ -18,3 +18,5 @@ C:\Users\elyon\Documents\programming_practices\3module\Seminar05\TODO-задач
 C:\Users\elyon\Documents\programming_practices\3module\Seminar05\TODO-задачи\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_01\obj\Debug\TODO_Task_01.csproj.CoreCompileInputs.cache
 C:\Users\elyon\Documents\programming_practices\3module\Seminar05\TODO-задачи\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_01\obj\Debug\TODO_Task_01.exe
 C:\Users\elyon\Documents\programming_practices\3module\Seminar05\TODO-задачи\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_01\obj\Debug\TODO_Task_01.pdb
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\TODO-задачи\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_01\bin\Debug\TODO_Task_01.exe.CodeAnalysisLog.xml
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\TODO-задачи\WF_PictureBox_TODOTasks\WF_PictureBox_TODOTasks\TODO_Task_01\bin\Debug\TODO_Task_01.exe.lastcodeanalysissucceeded
