@@ -20,7 +20,7 @@ namespace Elections
             get => candidates;
             private set
             {
-                if (value == null) throw new FormatException("Кандидатов нет выборы не пройдут!?");
+                if (value == null) throw new NullReferenceException("Кандидатов нет выборы не пройдут!?");
                 candidates = value;
             }
         }
