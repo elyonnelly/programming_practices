@@ -2,10 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-/* Задача: Запустить 5 методов MethodAsync асинхронно
- * Узнать назначение основных деталей работы асинхронного программирования:
- *  Async, Task, await.
- * Узнать порядок выполнения асинхронных операций.
+/* Задача: Запустить 5 методов MethodAsync асинхронно и выяснить порядок выполнения асинхронных операций.
  */
 
 namespace AcynsAwait_ExampleTask
@@ -105,8 +102,6 @@ namespace AcynsAwait_ExampleTask
         static void Main(string[] args)
         {
             Console.WriteLine("Main thread: Я запустился!");
-
-            
 
             Console.WriteLine("Main thread: Передаю управление в метод Variant1...\n");
             Console.WriteLine("Сообщения от Variant1:");
