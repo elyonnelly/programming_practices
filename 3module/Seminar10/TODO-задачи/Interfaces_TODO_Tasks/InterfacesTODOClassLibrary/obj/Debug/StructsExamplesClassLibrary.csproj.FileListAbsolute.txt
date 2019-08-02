@@ -1,0 +1,6 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\Module_3_Structs\Structs_Example_Tasks\StructsExamplesClassLibrary\bin\Debug\StructsExamplesClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Module_3_Structs\Structs_Example_Tasks\StructsExamplesClassLibrary\bin\Debug\StructsExamplesClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Module_3_Structs\Structs_Example_Tasks\StructsExamplesClassLibrary\obj\Debug\StructsExamplesClassLibrary.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Module_3_Structs\Structs_Example_Tasks\StructsExamplesClassLibrary\obj\Debug\StructsExamplesClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Module_3_Structs\Structs_Example_Tasks\StructsExamplesClassLibrary\obj\Debug\StructsExamplesClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Module_3_Structs\Structs_Example_Tasks\StructsExamplesClassLibrary\obj\Debug\StructsExamplesClassLibrary.pdb
