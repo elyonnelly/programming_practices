@@ -95,7 +95,7 @@ namespace Example0
         /// <summary>
         /// Приготовление завтрака
         /// </summary>
-        static async void MakeBreakfast()
+        static async Task MakeBreakfast()
         {
             /*
              * Приготовление завтрака можно описать следующим образом:
@@ -158,9 +158,10 @@ namespace Example0
 
         static void Main(string[] args)
         {
-            MakeBreakfast();
+            Task breakfast = MakeBreakfast();
+            //Метод, который останавливает выполнение кода до тех пор, пока соответствующий таск не завершится
+            breakfast.Wait();
 
-            Console.Read();
         }
     }
 
