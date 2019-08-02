@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Task4
 {
-    //ленивая колекция дает элементы когда у нее их запрашивают
-    //те они коллекция не была создана до того как к ней обратились
-    //задача выводить жлементы последовательности пока пользовательне нажмет какую-либо кнопку
+    //ленивая колекция дает элементы когда у нее их запрашивают,
+    //те они коллекция не была заполнена до того, как к ней обратились
+    //задача: выводить элементы последовательности до момента, когда пользовательне нажмет какую-либо кнопку
 
     class Seqences
     {
@@ -53,18 +53,18 @@ namespace Task4
     {
         static void Main(string[] args)
         {
-            //foreach (var item in Seqences.Fibonacci)
-            //{
-            //    Console.WriteLine(item);
-            //    Thread.Sleep(100);
-            //    if (Console.KeyAvailable) break;
-            //}
-            foreach (var item in Seqences.Exponential(3))
+            foreach (var item in Seqences.Fibonacci)
             {
                 Console.WriteLine(item);
                 Thread.Sleep(100);
                 if (Console.KeyAvailable) break;
             }
+            //foreach (var item in Seqences.Exponential(3))
+            //{
+            //    Console.WriteLine(item);
+            //    Thread.Sleep(100);
+            //    if (Console.KeyAvailable) break;
+            //}
         }
     }
 }
