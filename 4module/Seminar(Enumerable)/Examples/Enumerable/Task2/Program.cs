@@ -51,7 +51,7 @@ namespace Task2
                 
             }
 
-            object IEnumerator.Current => throw new NotImplementedException();//исправьте и объясните, что это такое
+            object IEnumerator.Current => Current;//исправьте и объясните, что это такое
 
             public void Dispose() { }//не вызыывается при итерировании
             
