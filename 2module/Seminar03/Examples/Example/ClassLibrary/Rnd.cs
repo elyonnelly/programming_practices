@@ -8,18 +8,21 @@ namespace ClassLibrary
 {
     public class Rnd
     {
+        public static Random rnd = new Random();
+
         /// <summary>
         /// создание рандомного имени
         /// </summary>
         /// <param name="rnd"></param>
         /// <returns></returns>
-        public static string CreateName(Random rnd)
+        public static string CreateName()
         {
             string name = "";
-            name += (char)rnd.Next('A', 'Z');
-            for (int i = 0; i < rnd.Next(5, 15); i++)
+            name += (char)rnd.Next('A', 'Z' + 1);
+            int rnk = rnd.Next(5, 15);
+            for (int i = 0; i < rnk; i++)
             {
-                name += (char)rnd.Next('a', 'z');//обратите внимание на работу char`ов
+                name += (char)rnd.Next('a', 'z' + 1);//обратите внимание на работу char`ов
             }
             return name;
         }
@@ -29,32 +32,15 @@ namespace ClassLibrary
         /// </summary>
         /// <param name="rnd"></param>
         /// <returns></returns>
-        public static string GetSex(Random rnd)
-        {
-            if (rnd.Next(0, 2) == 1)
-            {
-                return "Male";
-            }
-            else
-                return "Female";
-        }
+        public static string GetSex() => rnd.Next(0, 2) == 1 ? "Male" : "Female";
+
 
         /// <summary>
         /// метод выдающий степень учителя
         /// </summary>
         /// <param name="rnd"></param>
         /// <returns></returns>
-        public static string GetDegree(Random rnd)
-        {
-            int rnk = rnd.Next(0, 2);
-            if (rnk == 0)
-            {
-                return "Middle";
-            }
-            else
-            {
-                return "Senior";
-            }
-        }
+        public static string GetDegree() => rnd.Next(0, 2) == 0 ? "Middle" : "Senior";
+
     }
 }

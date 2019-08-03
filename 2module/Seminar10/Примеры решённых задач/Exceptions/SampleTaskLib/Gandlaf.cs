@@ -8,9 +8,17 @@ namespace SampleTaskLib
     public class Gandlaf
     {
         /// <summary>
-        /// Коэффициенты при степенях трехчлена
+        /// Коэффициент при x^2
         /// </summary>
-        double a, b, c;
+        public double A { get; private set; }
+        /// <summary>
+        /// Коэффициент при x
+        /// </summary>
+        public double B { get; private set; }
+        /// <summary>
+        /// Коэффициент при свободном члене
+        /// </summary>
+        public double C { get; private set; }
 
         /// <summary>
         /// Конструктор класса 
@@ -20,26 +28,19 @@ namespace SampleTaskLib
         /// <param name="c">Коэффициент при свободном члене</param>
         public Gandlaf(double a, double b, double c)
         {
-            this.a = a;
-            this.b = b;
-            this.c = c;
+            this.A = a;
+            this.B = b;
+            this.C = c;
         }
-
-        /// <summary>
-        /// Свойства для доступа коэффицентов квадратного трехчлена.
-        /// </summary>
-        public double A { get => a; }
-        public double B { get => b; }
-        public double C { get => c; }
 
         /// <summary>
         /// Вычисление суммы корней трехчлена
         /// </summary>
         /// <returns></returns>
-        int CalculateSumOfRoots(double discriminant)
+        private int CalculateSumOfRoots(double discriminant)
         {
-            double x1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
-            double x2 = (b + Math.Sqrt(discriminant)) / (2 * a);
+            double x1 = (-B + Math.Sqrt(discriminant)) / (2 * A);
+            double x2 = (B + Math.Sqrt(discriminant)) / (2 * A);
             return ((int)(x1 + x2));
         }
 
@@ -48,7 +49,7 @@ namespace SampleTaskLib
         /// </summary>
         public void TryToPass()
         {
-            double D = Math.Pow(b, 2) - 4 * a * c;
+            double D = Math.Pow(B, 2) - 4 * A * C;
             if (D < 0) throw new NoPassageException();
             else
             {

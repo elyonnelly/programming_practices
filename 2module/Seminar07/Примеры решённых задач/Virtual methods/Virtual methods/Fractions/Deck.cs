@@ -3,31 +3,32 @@
 namespace Fractions
 {
     /// <summary>
-    /// Класс колода
+    /// Класс колоды
     /// </summary>
     public class Deck 
     {
         static Random random = new Random();
+
         /// <summary>
         /// Количество золотых карт
         /// </summary>
-        int amountOfGoldenCards;
+        public int AmountOfGoldenCards { get; private set; }
         /// <summary>
         /// Количество серебряных карт
         /// </summary>
-        int amountOfSilverCards;
+        public int AmountOfSilverCards { get; private set; }
         /// <summary>
-        /// оличество бронзовых карт
+        /// Количество бронзовых карт
         /// </summary>
-        int amountOfBronzeCards;
+        public int AmountOfBronzeCards { get; private set; }
         /// <summary>
-        /// Сила лидера
+        /// Сила лидера колоды
         /// </summary>
-        int leaderStrength;
+        public int LeaderStrength { get; private set; }
         /// <summary>
-        /// Имя лидера
+        /// Имя лидера колоды
         /// </summary>
-        string leaderName;
+        public string LeaderName { get; private set; }
 
         /// <summary>
         /// Конструктор для создания экземпляра колоды
@@ -43,38 +44,17 @@ namespace Fractions
             this.AmountOfSilverCards = amountOfSilverCards;
             this.AmountOfBronzeCards = amountOfBronzeCards;
             this.LeaderName = leaderName;
-            this.leaderStrength = leaderStrength;
+            this.LeaderStrength = leaderStrength;
         }
-
-        /// <summary>
-        /// Сврйство доступа к количеству золотых карт
-        /// </summary>
-        public int AmountOfGoldenCards { get => amountOfGoldenCards; set => amountOfGoldenCards = value; }
-        /// <summary>
-        /// Сврйство доступа к количеству серебряных карт
-        /// </summary>
-        public int AmountOfSilverCards { get => amountOfSilverCards; set => amountOfSilverCards = value; }
-        /// <summary>
-        /// Сврйство доступа к количеству бронзовых карт
-        /// </summary>
-        public int AmountOfBronzeCards { get => amountOfBronzeCards; set => amountOfBronzeCards = value; }
-        /// <summary>
-        /// Свойство доступа к полю силы лидера
-        /// </summary>
-        public int LeaderStrength { get => leaderStrength; set => leaderStrength = value; }
-        /// <summary>
-        /// Свойство доступа к полю имени лидера
-        /// </summary>
-        public string LeaderName { get => leaderName; set => leaderName = value; }
 
         /// <summary>
         /// Свойство для определения количества карт в колоде
         /// </summary>
-        public int AmountOfCards { get => amountOfGoldenCards + amountOfSilverCards + amountOfBronzeCards + 1; }
+        public int AmountOfCards { get => AmountOfGoldenCards + AmountOfSilverCards + AmountOfBronzeCards + 1; }
 
         /// <summary>
         /// Метод для определения вероятности выигрыша партии
-        /// </summary>0
+        /// </summary>
         /// <returns></returns>
         public virtual double ProbabilityToWinTheGame()
         {
@@ -89,11 +69,11 @@ namespace Fractions
         /// <summary>
         /// Метод для вывода информации о колоде
         /// </summary>
-        public override string ToString() => $"Leader name: {leaderName}\n" +
-                                             $"Leader strength: {leaderStrength}\n" +
-                                             $"Amount of golden cards: {amountOfGoldenCards}\n" +
-                                             $"Amount of silver cards: {amountOfSilverCards}\n" +
-                                             $"Amount of bronze cards: {amountOfBronzeCards}\n" +
+        public override string ToString() => $"Leader name: {LeaderName}\n" +
+                                             $"Leader strength: {LeaderStrength}\n" +
+                                             $"Amount of golden cards: {AmountOfGoldenCards}\n" +
+                                             $"Amount of silver cards: {AmountOfSilverCards}\n" +
+                                             $"Amount of bronze cards: {AmountOfBronzeCards}\n" +
                                              $"Total amount of cards: {AmountOfCards}";
     }
 }

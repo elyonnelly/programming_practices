@@ -1,0 +1,6 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\Virtual methods\Virtual methods\Fractions\bin\Debug\Fractions.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Virtual methods\Virtual methods\Fractions\bin\Debug\Fractions.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Virtual methods\Virtual methods\Fractions\obj\Debug\Fractions.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Virtual methods\Virtual methods\Fractions\obj\Debug\Fractions.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Virtual methods\Virtual methods\Fractions\obj\Debug\Fractions.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Virtual methods\Virtual methods\Fractions\obj\Debug\Fractions.csprojAssemblyReference.cache

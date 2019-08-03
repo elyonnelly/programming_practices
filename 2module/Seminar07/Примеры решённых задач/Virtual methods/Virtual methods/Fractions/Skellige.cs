@@ -8,11 +8,11 @@
         /// <summary>
         /// Сила способности колоды
         /// </summary>
-        int deathGloryForce;
+        public int DeathGloryForce { get; private set; }
         /// <summary>
         /// Количество медиков в колоде
         /// </summary>
-        int amountOfMedics;
+        public int AmountOfMedics { get; private set; }
 
         /// <summary>
         /// Конструктор для создания экземпляра колоды Скеллиге
@@ -24,36 +24,28 @@
         /// <param name="leaderStrength">Сила лидера</param>
         /// <param name="deathGloryForce">Сила способности колоды</param>
         /// <param name="amountOfMedics">Количество медиков в колоде</param>
-        public Skellige(int amountOfGoldenCards, int amountOfSilverCards, int amountOfBronzeCards, string leaderName, int leaderStrength, int deathGloryForce, int amountOfMedics) : 
-            base(amountOfGoldenCards, amountOfSilverCards, amountOfBronzeCards, leaderName, leaderStrength)
+        public Skellige(int amountOfGoldenCards, int amountOfSilverCards, int amountOfBronzeCards, string leaderName, 
+                        int leaderStrength, int deathGloryForce, int amountOfMedics) : 
+                        base(amountOfGoldenCards, amountOfSilverCards, amountOfBronzeCards, leaderName, leaderStrength)
         {
             this.DeathGloryForce = deathGloryForce;
             this.AmountOfMedics = amountOfMedics;
         }
 
         /// <summary>
-        /// Свойство доступа к силе способности колоды
-        /// </summary>
-        public int DeathGloryForce { get => deathGloryForce; set => deathGloryForce = value; }
-        /// <summary>
-        /// Свойство доступа к количеству медиков
-        /// </summary>
-        public int AmountOfMedics { get => amountOfMedics; set => amountOfMedics = value; }
-
-        /// <summary>
         /// Метод для определения вероятности выигрыша партии
         /// </summary>
         /// <returns></returns>
-        public virtual double ProbabilityToWinTheGame()
+        public override double ProbabilityToWinTheGame()
         {
-            int length = (AmountOfCards * deathGloryForce * amountOfMedics).ToString().Length + 1;
+            int length = (AmountOfCards * DeathGloryForce * AmountOfMedics).ToString().Length + 1;
             int powTen = 1;
             while (length != 0)
             {
                 powTen *= 10;
                 length--;
             }
-            return AmountOfCards * deathGloryForce * amountOfMedics / (double)powTen * 100;
+            return AmountOfCards * DeathGloryForce * AmountOfMedics / (double)powTen * 100;
         }
 
         /// <summary>
@@ -64,6 +56,7 @@
         /// <summary>
         /// Метод для вывода информации о колоде
         /// </summary>
-        public override string ToString() => base.ToString() + $"\nDeath glory force: {deathGloryForce}\nAmount of medics: {amountOfMedics}";
+        public override string ToString() => base.ToString() + $"\nDeath glory force: {DeathGloryForce}" +
+                                                               $"\nAmount of medics: {AmountOfMedics}";
     }
 }

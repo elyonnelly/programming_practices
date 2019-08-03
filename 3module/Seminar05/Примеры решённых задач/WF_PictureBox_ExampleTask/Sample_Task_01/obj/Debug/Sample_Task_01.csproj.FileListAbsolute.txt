@@ -1,0 +1,26 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\Sample_Task_01.exe.config
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\Sample_Task_01.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\Sample_Task_01.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.Properties.Resources.resources
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csproj.GenerateResource.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.fractalForm.resources
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\PictureBoxExampleClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\PictureBoxExampleClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\WindowsFormsPBX\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csproj.CopyComplete
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\Sample_Task_01.exe.config
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\Sample_Task_01.exe
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\Sample_Task_01.pdb
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\PictureBoxExampleClassLibrary.dll
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\bin\Debug\PictureBoxExampleClassLibrary.pdb
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csprojAssemblyReference.cache
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.FractalForm.resources
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.Properties.Resources.resources
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csproj.GenerateResource.cache
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csproj.CoreCompileInputs.cache
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.csproj.CopyComplete
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.exe
+C:\Users\elyon\Documents\programming_practices\3module\Seminar05\Примеры решённых задач\WF_PictureBox_ExampleTask\Sample_Task_01\obj\Debug\Sample_Task_01.pdb

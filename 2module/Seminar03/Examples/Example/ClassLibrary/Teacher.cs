@@ -15,8 +15,8 @@ namespace ClassLibrary
         }
         public string GetInfo() => $"Name: {Name}\nAge: {Age}\tDegree: {Degree}";
 
-        int Age { get; set; }//инкапсуляция ради инкапсуляции
-        string Name { get; set; }
-        string Degree { get; set; }
+        int Age { get; }
+        string Name { get; }
+        string Degree { get; }
     }
 }
