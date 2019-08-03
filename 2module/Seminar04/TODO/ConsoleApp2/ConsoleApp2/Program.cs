@@ -56,7 +56,7 @@ namespace ConsoleApp2
 
     class MSU_Student //TODO Напишите класс MSU_Student, по аналогии с классом HSE_Student
     {
-        ExamBook offsetBook;
+        ExamBook examBook;
         public void WriteMSU()
         //Определить метод, который выводит сообщение типа
         //"YEAH, I'm HSE student! My name is Mark, I'm 12 years old! I have 4 in my exam book"

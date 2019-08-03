@@ -25,46 +25,35 @@ namespace Sample_Task_02
         /// </summary>
         public ImageForm()
         {
+            //Метод, добавляющий на форму все компоненты, которые мы заявили в дизайнере форм (как то: label, PictureBox, etc.)
             InitializeComponent();
             menuStrip.Visible = false;
         }
+        
         /// <summary>
-        /// Метод для "блокировки" кнопок
-        /// </summary>
-        private void DisableButtons()
-        {
-            foreach (var button in buttons)
-                button.Enabled = false;
-            this.ActiveControl = menuStrip;
-        }
-        /// <summary>
-        /// Метод для снятия "блокировки" с кнопок
-        /// </summary>
-        private void EnableButtons()
-        {
-            foreach (var button in buttons)
-                button.Enabled = true;
-        }
-        /// <summary>
-        /// Список кнопок-ячеек
-        /// </summary>
+         /// Список кнопок-ячеек для фото
+         /// </summary>
         List<Button> buttons = new List<Button>();
         /// <summary>
-        /// Создание новой разметки для коллажа
+        /// Обработчик события, возникающего при нажатии на кнопку создания коллажа.
+        /// Создание новой разметки для коллажа.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void CreateButton_Click(object sender, EventArgs e)
         {
+            //Создание нового окна создания коллажа
             CreateCollageForm createCollageForm = new CreateCollageForm();
             if (createCollageForm.ShowDialog(this) == DialogResult.OK)
             {
+                //Инициализирование сетки коллажа начальными значениями
                 tableLayoutPanel.RowCount = heightCells;
                 tableLayoutPanel.ColumnCount = widthCells;
                 tableLayoutPanel.RowStyles[0].SizeType = SizeType.AutoSize;
                 tableLayoutPanel.ColumnStyles[0].SizeType = SizeType.AutoSize;
                 createButton.Visible = false;
                 menuStrip.Visible = true;
+                //Добавление в ячейки сетки коллажа кнопок, по которым можно добавить изображение в ячейку коллажа
                 for (var rowNumber = 0; rowNumber < tableLayoutPanel.RowCount; rowNumber++)
                     for (var columnNumber = 0; columnNumber < tableLayoutPanel.ColumnCount; columnNumber++)
                     {
@@ -84,27 +73,52 @@ namespace Sample_Task_02
             }
         }
         /// <summary>
+        /// Метод для "блокировки" кнопок-ячеек
+        /// </summary>
+        private void DisableButtons()
+        {
+            foreach (var button in buttons)
+                button.Enabled = false;
+            this.ActiveControl = menuStrip;
+        }
+        /// <summary>
+        /// Метод для снятия "блокировки" с кнопок-ячеек
+        /// </summary>
+        private void EnableButtons()
+        {
+            foreach (var button in buttons)
+                button.Enabled = true;
+        }
+
+        /// <summary>
         /// Обработчик события, возникающего при изменении размеров коллажа
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void TableLayoutPanel_Resize(object sender, EventArgs e)
         {
+            //Изменение размеров каждого изображения в коллаже пропорционально уменьшению всей формы
             tableLayoutPanel.RowStyles[0].SizeType = SizeType.AutoSize;
             tableLayoutPanel.ColumnStyles[0].SizeType = SizeType.AutoSize;
-            for (int i = 0; i < buttons.Count; i++)
+            foreach (var button in buttons)
             {
-                buttons[i].Width = ClientSize.Width / tableLayoutPanel.ColumnCount;
-                buttons[i].Height = (ClientSize.Height - menuStrip.Height) / tableLayoutPanel.RowCount;
+                button.Width = ClientSize.Width / tableLayoutPanel.ColumnCount;
+                button.Height = (ClientSize.Height - menuStrip.Height) / tableLayoutPanel.RowCount;
             }
         }
         /// <summary>
         /// Обработчик события, возникающего при нажатии на одну из кнопок-ячеек (выбор изображения)
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void AddImageButton_Click(object sender, EventArgs e)
         {
+            /* Среди возможных компонентов для формы есть SomeDialog, то есть диалоговые окна.
+             * Например, ColorDialog представляет общее диалоговое окно, в котором отображаются доступные цвета и элементы управления,
+             * позволяющие пользователю определять собственные цвета. FolderDialog позволяет пользователю выбрать папку в проводнике.
+             * После окончания работы пользователя с диалоговым окном, компонент в соответствующих свойствах хранит
+             * всю интересующую нас информацию.*/
+
             OpenFileDialog openFileDialog = new OpenFileDialog()
             {
                 Title = "Choose image",
@@ -115,8 +129,14 @@ namespace Sample_Task_02
             {
                 try
                 {
+                    //Установка выбранного пользователем изображения на изображение кнопки
+
                     Button button = sender as Button;
                     button.BackgroundImageLayout = ImageLayout.Stretch;
+
+                    /* Bitmap Инкапсулирует точечный рисунок GDI+,
+                     * состоящий из данных пикселей графического изображения и атрибутов рисунка.
+                     * Удобный способ работы с изображениями в WinForms. */
                     button.BackgroundImage = new Bitmap(openFileDialog.FileName);
                 }
                 catch (ArgumentException)
@@ -134,8 +154,8 @@ namespace Sample_Task_02
         /// <summary>
         /// Обработчик события, возникающего при нажатии на кнопку сохранения
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Объект, на котором сработало событие</param>
+        /// <param name="e">Параменты события</param>
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Снятие выделения с кнопок
