@@ -27,8 +27,8 @@ namespace Example1
             double y; // Случайная точка
             double value; 
             int square = 4; // Площадь на которой происходит интегрирование
-            int entries = 0; // Кол-во попаданий под график
-            int numberOfPoints = 5000; // Кол-во точек всего
+            double entries = 0; // Кол-во попаданий под график
+            int numberOfPoints = 6000; // Кол-во точек всего
             int index = 1;
             for (int i = 0; i < numberOfPoints; i++)
             {
@@ -41,15 +41,15 @@ namespace Example1
                     if (y < value) entries++;
                 }
             }
-            res = entries / numberOfPoints * square;
+            res = Math.Round(entries / numberOfPoints * square, 4);
         }
 
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         { // Отслеживаем изменение процесса
             progressBar.Value = e.ProgressPercentage;
             lblProcessing.Text = $"Processing ... {e.ProgressPercentage}%";
-            lblProcessing.Refresh();
             progressBar.Update();
+            lblProcessing.Refresh();
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
