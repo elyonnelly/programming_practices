@@ -1,0 +1,10 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\bin\Debug\TODO_Task_01.exe.config
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\bin\Debug\TODO_Task_01.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\bin\Debug\TODO_Task_01.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\bin\Debug\ParallelClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\bin\Debug\ParallelClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\obj\Debug\TODO_Task_01.csprojAssemblyReference.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\obj\Debug\TODO_Task_01.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\obj\Debug\TODO_Task_01.csproj.CopyComplete
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\obj\Debug\TODO_Task_01.exe
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\TODO_Task_01\obj\Debug\TODO_Task_01.pdb
