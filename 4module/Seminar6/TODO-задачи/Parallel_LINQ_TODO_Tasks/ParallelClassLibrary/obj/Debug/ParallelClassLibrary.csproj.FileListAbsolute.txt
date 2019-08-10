@@ -1,0 +1,6 @@
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\ParallelClassLibrary\bin\Debug\ParallelClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\ParallelClassLibrary\bin\Debug\ParallelClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\ParallelClassLibrary\obj\Debug\ParallelClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\ParallelClassLibrary\obj\Debug\ParallelClassLibrary.dll
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\ParallelClassLibrary\obj\Debug\ParallelClassLibrary.pdb
+C:\Users\Мария\Desktop\ПРАКТИКА\Async_Await_ParallelLINQ_TODO_Tasks\Parallel_LINQ_TODO_Tasks\ParallelClassLibrary\obj\Debug\ParallelClassLibrary.csprojAssemblyReference.cache
