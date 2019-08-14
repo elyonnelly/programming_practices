@@ -36,7 +36,7 @@ namespace Task2
 
                     for (int i = 0; i < 4; ++i)
                         Console.WriteLine(br.ReadByte());
-                    // Заметим, что числа записываются по байтом задом наперёд
+                    // Заметим, что числа записываются по байтам задом наперёд
                 }
             }
             catch (IOException)
