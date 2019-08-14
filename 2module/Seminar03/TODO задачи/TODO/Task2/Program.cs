@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary;
-
+/*
+ * Создать массив элементов типа StaffMember и вывести о них информацию
+ */
 namespace Task2
 {
     class Program
@@ -21,7 +23,7 @@ namespace Task2
             }
         }
 
-        //TODO сделать метод GenerateStaff2, генерирующий работника со случайнымим значениями параметров.
+        //TODO сделать метод GenerateStaff, генерирующий работника со случайнымим значениями параметров.
         // зарплата от -1000 до 1000, имя - случайный набор букв латинского алфавита, должность равновероятно босс или рабочий
     }
 }

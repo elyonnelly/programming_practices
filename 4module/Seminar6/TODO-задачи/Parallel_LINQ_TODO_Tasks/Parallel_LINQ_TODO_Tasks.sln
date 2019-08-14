@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODO_Task_01", "TODO_Task_01\TODO_Task_01.csproj", "{7717E251-0F71-48AA-AC03-448A3765BF02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelClassLibrary", "ParallelClassLibrary\ParallelClassLibrary.csproj", "{EB67C4BE-7205-41A7-9CE6-3DB29FCC3E61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7717E251-0F71-48AA-AC03-448A3765BF02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7717E251-0F71-48AA-AC03-448A3765BF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7717E251-0F71-48AA-AC03-448A3765BF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7717E251-0F71-48AA-AC03-448A3765BF02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB67C4BE-7205-41A7-9CE6-3DB29FCC3E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB67C4BE-7205-41A7-9CE6-3DB29FCC3E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB67C4BE-7205-41A7-9CE6-3DB29FCC3E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB67C4BE-7205-41A7-9CE6-3DB29FCC3E61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05A27157-09C2-46E7-998A-CA69B6487506}
+	EndGlobalSection
+EndGlobal

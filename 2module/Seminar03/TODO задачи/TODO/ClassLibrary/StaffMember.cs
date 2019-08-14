@@ -21,16 +21,20 @@ namespace ClassLibrary
          */
 
         public int Salary { get; private set; } //TODO добавить проверку на неотрицательность зарплаты, иначе зарплата 0
-        
+
         public string Name { get; private set; } //TODO проверить что все символы в имени буквы и что первая буква заглавная
                                                  // иначе имя = Bill
         private string position;
-        public string Position { get { return position; } private set
+        public string Position
+        {
+            get { return position; }
+            private set
             {
                 if (value == "Boss" || value == "Worker") position = value;
                 else position = "Worker";
-            } }
+            }
+        }
 
-        public string GetInfo() => ""; //TODO
+        public string GetInfo() => ""; //TODO возвращать информацию о классе
     }
 }
