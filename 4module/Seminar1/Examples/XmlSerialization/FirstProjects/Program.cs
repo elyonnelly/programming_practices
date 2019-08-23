@@ -33,7 +33,7 @@ namespace FirstProjects
         {
             for (int i = 0; i < zoo.AllAnimals.Count; i++)
             {
-                zoo.AllAnimals[i].GetVoice += GetVoice;//подписываем на событие метод. Почему  мы не можем вызвать событие?
+                zoo.AllAnimals[i].GetVoice += GetVoice;//подписываем на событие метод. == Почему  мы не можем вызвать событие?
                 if (zoo.AllAnimals[i] is Bird)
                     zoo.AllAnimals[i].DoSound("__Chi-Chy__");
                 else
